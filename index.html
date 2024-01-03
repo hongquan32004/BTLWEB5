@@ -1,0 +1,808 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nexlab Technology - Accelerate Your Digital Transformation</title>
+    <link rel="shortcut icon" href="./assets/images/logo.png" type="image/x-icon">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Encode+Sans:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+          theme: {
+            extend: {
+                colors: {
+                    mainBlue: '#0f1f3d',
+                    mainOrange: '#ff7847',
+                    textColor: '#0d0e10',
+                },
+                fontFamily: {
+                    'sans': ['Encode Sans', 'sans-serif'],
+                },
+                animation: {
+                    'scroll': 'scroll 50s linear infinite',
+                    'scroll-reverse': 'scroll-reverse 50s linear infinite',
+                },
+                keyframes: {
+                    'scroll': {
+                        from: { transform: 'translateX(0)' },
+                        to: { transform: 'translateX(-100%)' },
+                    },
+                    'scroll-reverse': {
+                        from: { transform: 'translateX(-100%)' },
+                        to: { transform: 'translateX(0)' },
+                    }
+                }
+            }
+          }
+        }
+    </script>
+    <style type="text/tailwindcss">
+        @layer utilities {
+          .wrapper {
+            @apply max-w-7xl mx-auto flex items-center;
+          }
+          .nav-item {
+            @apply pl-5 pr-3 text-[#04121f] transition-all mx-0 hover:text-mainOrange duration-200;
+          }
+          .btn {
+            @apply bg-mainBlue px-[25px] py-4 text-white rounded-xl font-bold transition-all duration-200 hover:bg-mainOrange;
+          }
+          .btn-reverse {
+            @apply bg-mainOrange px-[25px] py-4 text-white rounded-xl font-bold transition-all duration-200 hover:bg-mainBlue;
+          }
+          .heading {
+            @apply max-w-[620px] font-bold text-center text-textColor mb-12 [&_h5]:text-orange-500 [&_h5]:tracking-[2px] [&_h5]:mb-4 [&_h5]:text-base [&_h2]:text-5xl [&_h2]:mb-4 [&_h2]:tracking-[-.4px] [&_p]:font-normal;
+          }
+          .product-tab-active {
+            @apply bg-white text-mainBlue;
+          }
+        }
+      </style>
+</head>
+<body class="font-sans text-[#40454f] text-lg scroll-smooth">
+    <div class="flex justify-center items-center bg-mainBlue text-white text-[14px] py-[10px] leading-7">
+        <div class="mr-3">
+            <img src="./assets/images/homepage/top-icon.png" alt="">
+        </div>
+        <p>We have consistently ranked high in the top 10 Best SMEs IT Companies survey for two consecutive years.</p>
+        <a href="https://itviec.com/vietnam-best-small-and-medium-it-companies" class="ml-[10px] font-medium group">
+            Read more at itviec 
+            <img src="./assets/images/homepage/right-arrow.svg" alt="" class="inline-block ml-[6px] transition-all duration-500 group-hover:translate-x-1 w-2">
+        </a>
+    </div>
+    <header class="wrapper bg-white justify-between py-5 leading-tight left-0 right-0">
+        <div class="w-[150px] h-10">
+            <a href="https://www.nexlab.tech/">
+                <img src="./assets/images/homepage/nav-logo.svg" alt="" class="object-contain">
+            </a>
+        </div>
+        <ul class="flex *:nav-item">
+            <li><a href="https://www.nexlab.tech/company">Company</a></li>
+            <li><a href="https://www.nexlab.tech/service-solution">Services & Solutions</a></li>
+            <li><a href="https://www.nexlab.tech/product">Product</a></li>
+            <li><a href="https://www.nexlab.tech/project">Project</a></li>
+            <li><a href="https://www.nexlab.tech/case-study">Case Study</a></li>
+        </ul>
+        <div class="w-auto flex">
+            <a class="btn" href="https://www.nexlab.tech/contact">Contact</a>
+        </div>
+    </header>
+    <section>
+        <div class="wrapper pt-20">
+            <div class="max-w-[620px] w-[53%]">
+                <h1 class="mb-4 text-7xl font-bold text-textColor leading-[76px]">
+                    Accelerate
+                    <br>
+                    your digital transformation
+                </h1>
+                <p class="max-w-[550px] mb-8 leading-[140%] text-2xl">Understanding your core values to bring the most suitable digital solution to your business</p>
+                <div class="flex gap-10 max-w-[400px] my-10 *:w-1/2">
+                    <div class="flex flex-col items-start">
+                        <div>
+                            <img src="./assets/images/homepage/banner-icon-1.png" alt="" class="pb-4">
+                        </div>
+                        <div>
+                            <p>Trusted partner.</p>
+                            <p>Briliant team.</p>
+                        </div>
+                    </div>
+                    <div class="flex flex-col items-start">
+                        <div>
+                            <img src="./assets/images/homepage/banner-icon-2.svg" alt="" class="pb-4">
+                        </div>
+                        <div>
+                            <p>Web & app.</p>
+                            <p>Flexible models.</p>
+                        </div>
+                    </div>
+                </div>
+                <a href="https://www.nexlab.tech/consultation" class="btn-reverse">Book a free consultation</a>
+            </div>
+        </div>
+        <div class="wrapper pt-20 pb-[100px]">
+            <div class="flex justify-between *:w-1/4 gap-8">
+                <div>
+                    <div class="w-14 h-14 mb-5">
+                        <img src="./assets/images/homepage/feature-icon-1.svg" alt="">
+                    </div>
+                    <div>
+                        <p><strong>Digital Transformation</strong> let you get a team of qualified experts for the project with a complete range of services</p>
+                    </div>
+                </div>
+                <div>
+                    <div class="w-14 h-14 mb-5">
+                        <img src="./assets/images/homepage/feature-icon-2.png" alt="">
+                    </div>
+                    <div>
+                        <p><strong>Web Development</strong> let you find optimal technical solutions for your web portals in your own system</p>
+                    </div>
+                </div>
+                <div>
+                    <div class="w-14 h-14 mb-5">
+                        <img src="./assets/images/homepage/feature-icon-3.png" alt="">
+                    </div>
+                    <div>
+                        <p><strong>Mobile Development</strong> let you grow your business with high quality iOS and Android native applications</p>
+                    </div>
+                </div>
+                <div>
+                    <div class="w-14 h-14 mb-5">
+                        <img src="./assets/images/homepage/feature-icon-4.svg" alt="">
+                    </div>
+                    <div>
+                        <p><strong>Offshore Development</strong> let you hire more highly qualified employees to enhance costs and risks</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section>
+        <div class="wrapper flex-col pt-20 pb-[140px]">
+            <div class="heading">
+                <h5>ARCHIEVEMENT</h5>
+                <h2>Making the journey</h2>
+                <p>Where your journey to digital transformation seems intimidating, we can help. Our team are always at your service to assist you in consultant, implementation, integration and support.</p>
+            </div>
+            <div class="flex w-full *:w-1/4 divide-x-[1px] divide-[#e1e4eb] text-center *:pt-12 border-t-[1px] border-[#e1e4eb] [&_div_h3]:font-bold [&_div_h3]:text-6xl [&_div_h3]:text-textColor [&_div_h3]:mb-4">
+                <div>
+                    <h3>10+</h3>
+                    <p>years experience</p>
+                </div>
+                <div>
+                    <h3>60+</h3>
+                    <p>completed projects</p>
+                </div>
+                <div>
+                    <h3>4</h3>
+                    <p>core products</p>
+                </div>
+                <div>
+                    <h3>30+</h3>
+                    <p>happy clients</p>
+                </div>
+            </div>
+            <div class="pt-[60px] mr-10 flex flex-col gap-y-10">
+                <div class="flex w-full p-[30px] rounded-xl shadow-[17px_17px_200px_rgba(64,69,79,.06)]">
+                    <div>
+                        <img src="./assets/images/homepage/paper-1.jpg" alt="" class="w-80 h-60 min-w-80 rounded-xl">
+                    </div>
+                    <div class="pl-10 flex flex-col items-start self-center justify-around text-left h-60">
+                        <div>
+                            <h3 class="text-2xl font-bold mb-[10px]">TOP 6 Vietnam Best IT Companies 2023 by itviec</h3>
+                            <p>Nexlab Technology has consistently ranked high in the top 10 Best SMEs IT Companies survey for two years in a row (2022, 2023). Our company is recognized as one of the companies with exceptional culture, benefits, working environment, managed care, and training in the fast-paced IT industry, as attested by over 18,000 reviews from IT employees on ITviec - one of the Best IT Job Recruitment Site in Vietnam.</p>
+                        </div>
+                        <a href="https://itviec.com/cong-ty-it-vua-va-nho-tot-nhat-vietnam" class="flex items-center text-textColor relative pb-[10px]">
+                            <div class="block font-bold">Learn more</div>
+                            <img src="./assets/images/homepage/right-arrow-2.svg" alt="" class="ml-4 mt-0.5 max-w-full inline-block">
+                            <span class="block absolute border-b-[1px] border-[#dfe2e9] w-full bottom-0"></span>
+                        </a>
+                    </div>
+                </div>
+                <div class="flex w-full p-[30px] rounded-xl shadow-[17px_17px_200px_rgba(64,69,79,.06)]">
+                    <div>
+                        <img src="./assets/images/homepage/paper-2.jpg" alt="" class="w-80 h-60 min-w-80 rounded-xl">
+                    </div>
+                    <div class="pl-10 flex flex-col items-start self-center justify-around text-left h-60">
+                        <div>
+                            <h3 class="text-2xl font-bold mb-[10px]">TOP 4 Vietnam Best IT Companies 2022 by itviec</h3>
+                            <p>Overcoming the challenges of working remotely during the pandemic, Nexlab has ranked 4th in the “Top 15 Vietnam Best IT Companies 2022” survey, based on 16,000+ reviews submitted by IT people on itviec – one of the Best IT JobRecruitment Site in Vietnam.</p>
+                        </div>
+                        <a href="https://itviec.com/cong-ty-it-tot-nhat-vietnam-2022" class="flex items-center text-textColor relative pb-[10px]">
+                            <div class="block font-bold">Learn more</div>
+                            <img src="./assets/images/homepage/right-arrow-2.svg" alt="" class="ml-4 mt-0.5 max-w-full inline-block">
+                            <span class="block absolute border-b-[1px] border-[#dfe2e9] w-full bottom-0"></span>
+                        </a>
+                    </div>
+                </div>
+                <div class="flex w-full p-[30px] rounded-xl shadow-[17px_17px_200px_rgba(64,69,79,.06)]">
+                    <div>
+                        <img src="./assets/images/homepage/paper-3.jpg" alt="" class="w-80 h-60 min-w-80 rounded-xl">
+                    </div>
+                    <div class="pl-10 flex flex-col items-start self-center justify-around text-left h-60">
+                        <div>
+                            <h3 class="text-2xl font-bold mb-[10px]">Partnership with Hasura Inc.</h3>
+                            <p>We moved to use Hasura primarily to be able to deliver projects within a tight timeline and deliver complex enterprise applications confidently. In 1 year, we has made Hasura an essential part of our stack & has observed a 50% reduction in the development cost and the ability to confidently deliver within timelines.</p>
+                        </div>
+                        <a href="https://hasura.io/blog/case-study-how-nexlab-used-hasura-to-digitize-daikin-vietnams-ac-servicing-business-unit/" class="flex items-center text-textColor relative pb-[10px]">
+                            <div class="block font-bold">Learn more</div>
+                            <img src="./assets/images/homepage/right-arrow-2.svg" alt="" class="ml-4 mt-0.5 max-w-full inline-block">
+                            <span class="block absolute border-b-[1px] border-[#dfe2e9] w-full bottom-0"></span>
+                        </a>
+                    </div>
+                </div>
+                <div class="flex w-full p-[30px] rounded-xl shadow-[17px_17px_200px_rgba(64,69,79,.06)]">
+                    <div>
+                        <img src="./assets/images/homepage/paper-4.png" alt="" class="w-80 h-60 min-w-80 rounded-xl">
+                    </div>
+                    <div class="pl-10 flex flex-col items-start self-center justify-around text-left h-60">
+                        <div>
+                            <h3 class="text-2xl font-bold mb-[10px]">An Eco-system for Daikin Vietnam</h3>
+                            <p>Daikin Vietnam worked with us on a project to modernize their legacy technology stack. Alongside their management team, we help breathe life to a super ecosystem which ensures operation need and also acts as an on-demand aggregator serving end-users.</p>
+                        </div>
+                        <a href="https://www.nexlab.tech/blogs/nexlab-tu-hao-dong-hanh-tren-con-duong-chuyen-doi-so-cua-daikin-vietnam" class="flex items-center text-textColor relative pb-[10px]">
+                            <div class="block font-bold">Learn more</div>
+                            <img src="./assets/images/homepage/right-arrow-2.svg" alt="" class="ml-4 mt-0.5 max-w-full inline-block">
+                            <span class="block absolute border-b-[1px] border-[#dfe2e9] w-full bottom-0"></span>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section>
+        <div class="wrapper flex-col justify-center pb-[150px]">
+            <div>
+                <h4 class="font-bold text-[40px] leading-[50px] mb-4">Meet the outstanding clients of ours</h4>
+            </div>
+            <div class="flex w-full justify-center mt-12 mb-5 items-center *:mx-[1%]">
+                <img src="./assets/images/homepage/client-1-1.svg" alt="">
+                <img src="./assets/images/homepage/client-1-2.svg" alt="">
+                <img src="./assets/images/homepage/client-1-3.svg" alt="">
+                <img src="./assets/images/homepage/client-1-4.svg" alt="">
+                <img src="./assets/images/homepage/client-1-5.svg" alt="">
+            </div>
+            <div class="flex w-full justify-center mt-12 mb-5 items-center *:mx-[1%]">
+                <img src="./assets/images/homepage/client-2-1.svg" alt="">
+                <img src="./assets/images/homepage/client-2-2.svg" alt="">
+                <img src="./assets/images/homepage/client-2-3.svg" alt="">
+                <img src="./assets/images/homepage/client-2-4.svg" alt="">
+                <img src="./assets/images/homepage/client-2-5.svg" alt="">
+            </div>
+            <div class="flex w-full justify-center mt-12 mb-5 items-center *:mx-[1%]">
+                <img src="./assets/images/homepage/client-3-1.svg" alt="">
+                <img src="./assets/images/homepage/client-3-2.svg" alt="">
+                <img src="./assets/images/homepage/client-3-3.svg" alt="">
+                <img src="./assets/images/homepage/client-3-4.svg" alt="">
+                <img src="./assets/images/homepage/client-3-5.svg" alt="">
+            </div>
+        </div>
+    </section>
+    <section class="bg-mainBlue">
+        <div class="wrapper flex-col justify-center pt-[145px]">
+            <div class="heading">
+                <h5>PRODUCTS</h5>
+                <h2 class="text-white">The 4 business platforms</h2>
+                <p></p>
+            </div>
+            <div class="w-full">
+                <div class="flex justify-center">
+                    <a href="#product-tab-1" class="px-5 py-2 bg-[#3f4c64] text-white font-medium rounded-xl text-base mr-5 product-tab-active">X-Core</a>
+                    <a href="#product-tab-2" class="px-5 py-2 bg-[#3f4c64] text-white font-medium rounded-xl text-base mr-5 ">Nexlab PHR</a>
+                    <a href="#product-tab-3" class="px-5 py-2 bg-[#3f4c64] text-white font-medium rounded-xl text-base mr-5 ">N-Commerce</a>
+                    <a href="#product-tab-4" class="px-5 py-2 bg-[#3f4c64] text-white font-medium rounded-xl text-base">N-Services</a>
+                </div>
+                <div>
+                    <div>
+                        <div class="flex *:w-[45%] justify-between items-center pt-20 pb-[145px]">
+                            <div class="text-white max-w-[500px]">
+                                <h6 class="text-[#47c1fe] mb-4 text-base font-bold tracking-widest">X-CORE</h6>
+                                <h2 class="text-[40px] leading-[48px] mb-4 font-bold">Digital Workspace for Business</h2>
+                                <p class="leading-7">Nexlab Technology in variably pursues the goal of bringing the highest benefits to our clients, so we have built XCore - A comprehensive digital space for businesses, where all the applications that business customers need are integrated on a single platform.</p>
+                                <br>
+                                <p class="leading-7">X-Core Digital Platform is dynamicallydeveloped with a choice of customization and unlimited scalability. X-Core offers optional packages that cater to the individual desires of each business. We are committed to accompanying and bringing the greatest value to our clients.</p>
+                            </div>
+                            <div class="flex justify-between flex-row-reverse relative *:*:rounded-xl">
+                                <div class="w-[85%] max-w-[480px] z-[1]">
+                                    <img src="./assets/images/homepage/product-1-1.png" alt="">
+                                </div>
+                                <div class="absolute w-2/5 -right-[15%] bottom-[15%] z-[1]">
+                                    <img src="./assets/images/homepage/product-1-2.jpg" alt="">
+                                </div>
+                                <div class="absolute -right-[10%] top-[15%] z-0">
+                                    <img src="./assets/images/homepage/product-1-3.svg" alt="" class="w-[80px]">
+                                </div>
+                            </div>
+                        </div>
+                        <div class="flex *:w-[45%] justify-between items-center pt-20 pb-[145px]">
+                            <div class="flex justify-between flex-row-reverse relative *:*:rounded-xl">
+                                <div class="w-[85%] max-w-[480px] z-[1]">
+                                    <img src="./assets/images/homepage/product-2-1.png" alt="">
+                                </div>
+                                <div class="absolute w-2/5 -right-[15%] bottom-[15%] z-[1]">
+                                    <img src="./assets/images/homepage/product-2-2.jpg" alt="">
+                                </div>
+                            </div>
+                            <div class="text-white max-w-[500px]">
+                                <h6 class="text-[#47c1fe] mb-4 text-base font-bold tracking-widest">NEXLAB PHR</h6>
+                                <h2 class="text-[40px] leading-[48px] mb-4 font-bold">Telehealth Platform</h2>
+                                <p class="leading-7">With many years of experience in building technology solutions within the health sector, Nexlab Technology has developed the Nexlab PHRplatform - Smart Health for every Vietnamese family. This is an all inclusive telehealth care platform with a medical record system, electronic health records and consultation,monitoring, care, and smart online medical appointment booking, connecting with leading medical facilities.</p>
+                                <br>
+                                <p class="leading-7">In the context that the Telehealth model (Telehealth Services) will keep exploding according to the trend of digital transformation, Nexlab PHR with a modern technology system will assist businesses, medical facilities, and hospitals to easily digitize effectively, helping the professional team to save time and resources.</p>
+                            </div>
+                        </div>
+                        <div class="flex *:w-[45%] justify-between items-center pt-20 pb-[145px]">
+                            <div class="text-white max-w-[500px]">
+                                <h6 class="text-[#47c1fe] mb-4 text-base font-bold tracking-widest">N-COMMERCE</h6>
+                                <h2 class="text-[40px] leading-[48px] mb-4 font-bold">E-Commerce Services Platform</h2>
+                                <p class="leading-7">For customers who are aiming at online retail business or seeking for all-in-one e-commerce solution for businesses and organizations, we provide a comprehensive solution package for e-commerce platform management with N-Commerce products.</p>
+                                <br>
+                                <p class="leading-7">N-Commerce product solution from us includes mobile applications and websites for end users, as well as system administration websites for operators. For the needs of managing branches, products, warehouses, orders, promotions, transactions, we provide a variety of customization options depending on the unique requirements of our customers.</p>
+                            </div>
+                            <div class="flex justify-between flex-row-reverse relative *:*:rounded-xl">
+                                <div class="w-[85%] max-w-[480px] z-[1]">
+                                    <img src="./assets/images/homepage/product-3-1.png" alt="">
+                                </div>
+                                <div class="absolute w-2/5 -right-[15%] bottom-[15%] z-[1]">
+                                    <img src="./assets/images/homepage/product-3-2.jpg" alt="">
+                                </div>
+                                <div class="absolute -right-[10%] top-[15%] z-0">
+                                    <img src="./assets/images/homepage/product-3-3.svg" alt="" class="w-[80px]">
+                                </div>
+                            </div>
+                        </div>
+                        <div class="flex *:w-[45%] justify-between items-center pt-20 pb-[145px]">
+                            <div class="text-white max-w-[500px]">
+                                <h6 class="text-[#47c1fe] mb-4 text-base font-bold tracking-widest">N-SERVICES</h6>
+                                <h2 class="text-[40px] leading-[48px] mb-4 font-bold">On-demand Services System</h2>
+                                <p class="leading-7">We introduced a package solution formulti-industry service platform management which benefits enterprises and corporations in the business industry in need of digital transforming and operating a service order management platform such as cosmetology, housework, repair, and construction.</p>
+                                <br>
+                                <p class="leading-7">Our N-Service solution provides avariety of accessibility options including mobile applications, websites for customers as well as a multifunction admin page for businesses and organizations. Managing services, costs, personnel, customers... with flexible settings and diverse deployment options are all available. Like other platform product solutions, we always provide optimal options according to the needs of our customers.</p>
+                            </div>
+                            <div class="flex justify-between flex-row-reverse relative *:*:rounded-xl">
+                                <div class="w-[85%] max-w-[480px] z-[1]">
+                                    <img src="./assets/images/homepage/product-4-1.png" alt="">
+                                </div>
+                                <div class="absolute w-2/5 right-[55%] bottom-[15%] z-[1]">
+                                    <img src="./assets/images/homepage/product-4-2.jpg" alt="">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section>
+        <div class="wrapper w-full">
+            <div class="flex w-full justify-between items-end pt-[145px]">    
+                <div class="heading flex flex-col items-start">
+                    <h5>PROJECTS</h5>
+                    <h2>What we build for business</h2>
+                    <p>We help them design & build & deliver innovative products</p>
+                </div>
+                <div>
+                    <a href="/product" class="flex items-center text-textColor relative pb-[10px] group *:transition-all *:duration-300">
+                        <div class="block font-bold">Learn more</div>
+                        <img src="./assets/images/homepage/right-arrow-2.svg" alt="" class="ml-4 mt-0.5 max-w-full inline-block group-hover:-rotate-45">
+                        <span class="block right-0 absolute border-b-[1px] border-[#dfe2e9] w-full bottom-0 group-hover:w-0"></span>
+                    </a>
+                </div>
+            </div>
+        </div>
+        <div class="overflow-hidden">
+            <div class="pt-[60px] overflow-hidden js-projects inline-flex pb-12">
+                <div class="flex flex-nowrap [&_a]:mx-5 [&_a]:block animate-scroll w-[calc(400px*11)] transition-all js-projects-slide">
+                    <div>
+                        <a href="" class="h-full max-w-[400px] text-[#40454f] bg-white rounded-xl mx-5 px-7 py-8 shadow-[17px_17px_200px_rgba(64,69,79,.06)] relative">
+                            <div class="w-14 h-14 border-[1px] border-[#f1f3f6] rounded-lg flex justify-center items-center mb-[26px]">
+                                <img src="./assets/images/homepage/project-1-1.png" alt="">
+                            </div>
+                            <h4 class="font-bold mb-2">Giup Viec Nha</h4>
+                            <p>Giup Viec Nha (GVN) is a marketplace platform connecting urban families with maids and other chore-associated service providers. While expanding into the B2B office market in 2017, we went on the infamous Shark Tank Vietnam season 1.</p>
+                            <div class="absolute w-[90px] border-[1px] border-[#f1f3f6] bg-[#f1f3f6] rounded-lg mt-10 mr-7 py-1 text-base font-medium flex justify-center top-0 right-0">
+                                <img src="./assets/images/homepage/more.svg" alt="" class="mr-2">
+                                <span>More</span>
+                            </div>
+                        </a>
+                    </div>
+                    <div>
+                        <a href="" class="h-full max-w-[400px] text-[#40454f] bg-white rounded-xl mx-5 px-7 py-8 shadow-[17px_17px_200px_rgba(64,69,79,.06)] relative">
+                            <div class="w-14 h-14 border-[1px] border-[#f1f3f6] rounded-lg flex justify-center items-center mb-[26px]">
+                                <img src="./assets/images/homepage/project-1-2.png" alt="">
+                            </div>
+                            <h4 class="font-bold mb-2">GoParkin</h4>
+                            <p>ST Parkin is an auto parking service for the Singapore market. Customer can use the mobile application (both iOS and Android) to find a parking area and pick a spot</p>
+                            <div class="absolute w-[90px] border-[1px] border-[#f1f3f6] bg-[#f1f3f6] rounded-lg mt-10 mr-7 py-1 text-base font-medium flex justify-center top-0 right-0">
+                                <img src="./assets/images/homepage/more.svg" alt="" class="mr-2">
+                                <span>More</span>
+                            </div>
+                        </a>
+                    </div>
+                    <div>
+                        <a href="" class="h-full max-w-[400px] text-[#40454f] bg-white rounded-xl mx-5 px-7 py-8 shadow-[17px_17px_200px_rgba(64,69,79,.06)] relative">
+                            <div class="w-14 h-14 border-[1px] border-[#f1f3f6] rounded-lg flex justify-center items-center mb-[26px]">
+                                <img src="./assets/images/homepage/project-1-3.png" alt="">
+                            </div>
+                            <h4 class="font-bold mb-2">JBee</h4>
+                            <p>"Global connection, Trust for business" is the guideline for GCO GROUP that had been born and developed firmly.</p>
+                            <div class="absolute w-[90px] border-[1px] border-[#f1f3f6] bg-[#f1f3f6] rounded-lg mt-10 mr-7 py-1 text-base font-medium flex justify-center top-0 right-0">
+                                <img src="./assets/images/homepage/more.svg" alt="" class="mr-2">
+                                <span>More</span>
+                            </div>
+                        </a>
+                    </div>
+                    <div>
+                        <a href="" class="h-full max-w-[400px] text-[#40454f] bg-white rounded-xl mx-5 px-7 py-8 shadow-[17px_17px_200px_rgba(64,69,79,.06)] relative">
+                            <div class="w-14 h-14 border-[1px] border-[#f1f3f6] rounded-lg flex justify-center items-center mb-[26px]">
+                                <img src="./assets/images/homepage/project-1-4.png" alt="">
+                            </div>
+                            <h4 class="font-bold mb-2">Raffles Connect</h4>
+                            <p>Raffles Medical Group is Singapore’s largest homegrown private healthcare provider. We help them to connect patients to a trusted network of healthcare providers via a secure & integrated app.</p>
+                            <div class="absolute w-[90px] border-[1px] border-[#f1f3f6] bg-[#f1f3f6] rounded-lg mt-10 mr-7 py-1 text-base font-medium flex justify-center top-0 right-0">
+                                <img src="./assets/images/homepage/more.svg" alt="" class="mr-2">
+                                <span>More</span>
+                            </div>
+                        </a>
+                    </div>
+                    <div>
+                        <a href="" class="h-full max-w-[400px] text-[#40454f] bg-white rounded-xl mx-5 px-7 py-8 shadow-[17px_17px_200px_rgba(64,69,79,.06)] relative">
+                            <div class="w-14 h-14 border-[1px] border-[#f1f3f6] rounded-lg flex justify-center items-center mb-[26px]">
+                                <img src="./assets/images/homepage/project-1-5.webp" alt="">
+                            </div>
+                            <h4 class="font-bold mb-2">Razer Gold</h4>
+                            <p>Razer™ is the world’s leading lifestyle brand for gamers. The triple-headed snake trademark of Razer is one of the most recognized logos in the global gaming and esports communities.</p>
+                            <div class="absolute w-[90px] border-[1px] border-[#f1f3f6] bg-[#f1f3f6] rounded-lg mt-10 mr-7 py-1 text-base font-medium flex justify-center top-0 right-0">
+                                <img src="./assets/images/homepage/more.svg" alt="" class="mr-2">
+                                <span>More</span>
+                            </div>
+                        </a>
+                    </div>
+                    <div>
+                        <a href="" class="h-full max-w-[400px] text-[#40454f] bg-white rounded-xl mx-5 px-7 py-8 shadow-[17px_17px_200px_rgba(64,69,79,.06)] relative">
+                            <div class="w-14 h-14 border-[1px] border-[#f1f3f6] rounded-lg flex justify-center items-center mb-[26px]">
+                                <img src="./assets/images/homepage/project-1-6.png" alt="">
+                            </div>
+                            <h4 class="font-bold mb-2">WOW</h4>
+                            <p>WOW is an application that allows users (customers) to connect more easily with professional, dedicated domestic helpers, electricians, and plumbers from WOW.</p>
+                            <div class="absolute w-[90px] border-[1px] border-[#f1f3f6] bg-[#f1f3f6] rounded-lg mt-10 mr-7 py-1 text-base font-medium flex justify-center top-0 right-0">
+                                <img src="./assets/images/homepage/more.svg" alt="" class="mr-2">
+                                <span>More</span>
+                            </div>
+                        </a>
+                    </div>
+                    <div>
+                        <a href="" class="h-full max-w-[400px] text-[#40454f] bg-white rounded-xl mx-5 px-7 py-8 shadow-[17px_17px_200px_rgba(64,69,79,.06)] relative">
+                            <div class="w-14 h-14 border-[1px] border-[#f1f3f6] rounded-lg flex justify-center items-center mb-[26px]">
+                                <img src="./assets/images/homepage/project-1-7.png" alt="">
+                            </div>
+                            <h4 class="font-bold mb-2">WebMoney Vietnam</h4>
+                            <p>WebMoney Vietnam is a guarantor member of WebMoney Transfer, using V-Check WMV — Prepaid transfer in Vietnamese dong. User can deposit money to wallet, withdraw cash from the balance, transfer money between 2 wallets and do payment for retailers and merchants.</p>
+                            <div class="absolute w-[90px] border-[1px] border-[#f1f3f6] bg-[#f1f3f6] rounded-lg mt-10 mr-7 py-1 text-base font-medium flex justify-center top-0 right-0">
+                                <img src="./assets/images/homepage/more.svg" alt="" class="mr-2">
+                                <span>More</span>
+                            </div>
+                        </a>
+                    </div>
+                    <div>
+                        <a href="" class="h-full max-w-[400px] text-[#40454f] bg-white rounded-xl mx-5 px-7 py-8 shadow-[17px_17px_200px_rgba(64,69,79,.06)] relative">
+                            <div class="w-14 h-14 border-[1px] border-[#f1f3f6] rounded-lg flex justify-center items-center mb-[26px]">
+                                <img src="./assets/images/homepage/project-1-8.jpeg" alt="">
+                            </div>
+                            <h4 class="font-bold mb-2">CC Core</h4>
+                            <p>Nexlab Technology has developed CC Core to help CII E&C drastically increase project efficiency and accountability by streamlining and mobilizing project communications and documentation.</p>
+                            <div class="absolute w-[90px] border-[1px] border-[#f1f3f6] bg-[#f1f3f6] rounded-lg mt-10 mr-7 py-1 text-base font-medium flex justify-center top-0 right-0">
+                                <img src="./assets/images/homepage/more.svg" alt="" class="mr-2">
+                                <span>More</span>
+                            </div>
+                        </a>
+                    </div>
+                    <div>
+                        <a href="" class="h-full max-w-[400px] text-[#40454f] bg-white rounded-xl mx-5 px-7 py-8 shadow-[17px_17px_200px_rgba(64,69,79,.06)] relative">
+                            <div class="w-14 h-14 border-[1px] border-[#f1f3f6] rounded-lg flex justify-center items-center mb-[26px]">
+                                <img src="./assets/images/homepage/project-1-9.jpeg" alt="">
+                            </div>
+                            <h4 class="font-bold mb-2">DIVA Beauty ERP</h4>
+                            <p>DIVA Beauty Salon is one of the leading prestigious beauty salons for customers in Vietnam</p>
+                            <div class="absolute w-[90px] border-[1px] border-[#f1f3f6] bg-[#f1f3f6] rounded-lg mt-10 mr-7 py-1 text-base font-medium flex justify-center top-0 right-0">
+                                <img src="./assets/images/homepage/more.svg" alt="" class="mr-2">
+                                <span>More</span>
+                            </div>
+                        </a>
+                    </div>
+                    <div>
+                        <a href="" class="h-full max-w-[400px] text-[#40454f] bg-white rounded-xl mx-5 px-7 py-8 shadow-[17px_17px_200px_rgba(64,69,79,.06)] relative">
+                            <div class="w-14 h-14 border-[1px] border-[#f1f3f6] rounded-lg flex justify-center items-center mb-[26px]">
+                                <img src="./assets/images/homepage/project-1-10.png" alt="">
+                            </div>
+                            <h4 class="font-bold mb-2">Daikin Services</h4>
+                            <p>Daikin is the global No.1 air conditioning manufacturer. We help Daikin to digitalize their whole ecosystem (warehouse, sale/ business, service).</p>
+                            <div class="absolute w-[90px] border-[1px] border-[#f1f3f6] bg-[#f1f3f6] rounded-lg mt-10 mr-7 py-1 text-base font-medium flex justify-center top-0 right-0">
+                                <img src="./assets/images/homepage/more.svg" alt="" class="mr-2">
+                                <span>More</span>
+                            </div>
+                        </a>
+                    </div>
+                    <div>
+                        <a href="" class="h-full max-w-[400px] text-[#40454f] bg-white rounded-xl mx-5 px-7 py-8 shadow-[17px_17px_200px_rgba(64,69,79,.06)] relative">
+                            <div class="w-14 h-14 border-[1px] border-[#f1f3f6] rounded-lg flex justify-center items-center mb-[26px]">
+                                <img src="./assets/images/homepage/project-1-11.png" alt="">
+                            </div>
+                            <h4 class="font-bold mb-2">FE HR Portal</h4>
+                            <p>FE CREDIT is the market leader in the consumer finance industry in Vietnam. With more than 20,000 employees, FE Credit needs a good Human Resource Management solution and we were trusted by them to do that.</p>
+                            <div class="absolute w-[90px] border-[1px] border-[#f1f3f6] bg-[#f1f3f6] rounded-lg mt-10 mr-7 py-1 text-base font-medium flex justify-center top-0 right-0">
+                                <img src="./assets/images/homepage/more.svg" alt="" class="mr-2">
+                                <span>More</span>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <div class="pb-[140px] overflow-hidden js-projects-reverse inline-flex">
+                <div class="flex flex-nowrap [&_a]:mx-5 [&_a]:block animate-scroll-reverse w-[calc(400px*11)] transition-all js-projects-slide-reverse">
+                    <div>
+                        <a href="" class="h-full max-w-[400px] text-[#40454f] bg-white rounded-xl mx-5 px-7 py-8 shadow-[17px_17px_200px_rgba(64,69,79,.06)] relative">
+                            <div class="w-14 h-14 border-[1px] border-[#f1f3f6] rounded-lg flex justify-center items-center mb-[26px]">
+                                <img src="./assets/images/homepage/project-1-1.png" alt="">
+                            </div>
+                            <h4 class="font-bold mb-2">Giup Viec Nha</h4>
+                            <p>Giup Viec Nha (GVN) is a marketplace platform connecting urban families with maids and other chore-associated service providers. While expanding into the B2B office market in 2017, we went on the infamous Shark Tank Vietnam season 1.</p>
+                            <div class="absolute w-[90px] border-[1px] border-[#f1f3f6] bg-[#f1f3f6] rounded-lg mt-10 mr-7 py-1 text-base font-medium flex justify-center top-0 right-0">
+                                <img src="./assets/images/homepage/more.svg" alt="" class="mr-2">
+                                <span>More</span>
+                            </div>
+                        </a>
+                    </div>
+                    <div>
+                        <a href="" class="h-full max-w-[400px] text-[#40454f] bg-white rounded-xl mx-5 px-7 py-8 shadow-[17px_17px_200px_rgba(64,69,79,.06)] relative">
+                            <div class="w-14 h-14 border-[1px] border-[#f1f3f6] rounded-lg flex justify-center items-center mb-[26px]">
+                                <img src="./assets/images/homepage/project-1-2.png" alt="">
+                            </div>
+                            <h4 class="font-bold mb-2">GoParkin</h4>
+                            <p>ST Parkin is an auto parking service for the Singapore market. Customer can use the mobile application (both iOS and Android) to find a parking area and pick a spot</p>
+                            <div class="absolute w-[90px] border-[1px] border-[#f1f3f6] bg-[#f1f3f6] rounded-lg mt-10 mr-7 py-1 text-base font-medium flex justify-center top-0 right-0">
+                                <img src="./assets/images/homepage/more.svg" alt="" class="mr-2">
+                                <span>More</span>
+                            </div>
+                        </a>
+                    </div>
+                    <div>
+                        <a href="" class="h-full max-w-[400px] text-[#40454f] bg-white rounded-xl mx-5 px-7 py-8 shadow-[17px_17px_200px_rgba(64,69,79,.06)] relative">
+                            <div class="w-14 h-14 border-[1px] border-[#f1f3f6] rounded-lg flex justify-center items-center mb-[26px]">
+                                <img src="./assets/images/homepage/project-1-3.png" alt="">
+                            </div>
+                            <h4 class="font-bold mb-2">JBee</h4>
+                            <p>"Global connection, Trust for business" is the guideline for GCO GROUP that had been born and developed firmly.</p>
+                            <div class="absolute w-[90px] border-[1px] border-[#f1f3f6] bg-[#f1f3f6] rounded-lg mt-10 mr-7 py-1 text-base font-medium flex justify-center top-0 right-0">
+                                <img src="./assets/images/homepage/more.svg" alt="" class="mr-2">
+                                <span>More</span>
+                            </div>
+                        </a>
+                    </div>
+                    <div>
+                        <a href="" class="h-full max-w-[400px] text-[#40454f] bg-white rounded-xl mx-5 px-7 py-8 shadow-[17px_17px_200px_rgba(64,69,79,.06)] relative">
+                            <div class="w-14 h-14 border-[1px] border-[#f1f3f6] rounded-lg flex justify-center items-center mb-[26px]">
+                                <img src="./assets/images/homepage/project-1-4.png" alt="">
+                            </div>
+                            <h4 class="font-bold mb-2">Raffles Connect</h4>
+                            <p>Raffles Medical Group is Singapore’s largest homegrown private healthcare provider. We help them to connect patients to a trusted network of healthcare providers via a secure & integrated app.</p>
+                            <div class="absolute w-[90px] border-[1px] border-[#f1f3f6] bg-[#f1f3f6] rounded-lg mt-10 mr-7 py-1 text-base font-medium flex justify-center top-0 right-0">
+                                <img src="./assets/images/homepage/more.svg" alt="" class="mr-2">
+                                <span>More</span>
+                            </div>
+                        </a>
+                    </div>
+                    <div>
+                        <a href="" class="h-full max-w-[400px] text-[#40454f] bg-white rounded-xl mx-5 px-7 py-8 shadow-[17px_17px_200px_rgba(64,69,79,.06)] relative">
+                            <div class="w-14 h-14 border-[1px] border-[#f1f3f6] rounded-lg flex justify-center items-center mb-[26px]">
+                                <img src="./assets/images/homepage/project-1-5.webp" alt="">
+                            </div>
+                            <h4 class="font-bold mb-2">Razer Gold</h4>
+                            <p>Razer™ is the world’s leading lifestyle brand for gamers. The triple-headed snake trademark of Razer is one of the most recognized logos in the global gaming and esports communities.</p>
+                            <div class="absolute w-[90px] border-[1px] border-[#f1f3f6] bg-[#f1f3f6] rounded-lg mt-10 mr-7 py-1 text-base font-medium flex justify-center top-0 right-0">
+                                <img src="./assets/images/homepage/more.svg" alt="" class="mr-2">
+                                <span>More</span>
+                            </div>
+                        </a>
+                    </div>
+                    <div>
+                        <a href="" class="h-full max-w-[400px] text-[#40454f] bg-white rounded-xl mx-5 px-7 py-8 shadow-[17px_17px_200px_rgba(64,69,79,.06)] relative">
+                            <div class="w-14 h-14 border-[1px] border-[#f1f3f6] rounded-lg flex justify-center items-center mb-[26px]">
+                                <img src="./assets/images/homepage/project-1-6.png" alt="">
+                            </div>
+                            <h4 class="font-bold mb-2">WOW</h4>
+                            <p>WOW is an application that allows users (customers) to connect more easily with professional, dedicated domestic helpers, electricians, and plumbers from WOW.</p>
+                            <div class="absolute w-[90px] border-[1px] border-[#f1f3f6] bg-[#f1f3f6] rounded-lg mt-10 mr-7 py-1 text-base font-medium flex justify-center top-0 right-0">
+                                <img src="./assets/images/homepage/more.svg" alt="" class="mr-2">
+                                <span>More</span>
+                            </div>
+                        </a>
+                    </div>
+                    <div>
+                        <a href="" class="h-full max-w-[400px] text-[#40454f] bg-white rounded-xl mx-5 px-7 py-8 shadow-[17px_17px_200px_rgba(64,69,79,.06)] relative">
+                            <div class="w-14 h-14 border-[1px] border-[#f1f3f6] rounded-lg flex justify-center items-center mb-[26px]">
+                                <img src="./assets/images/homepage/project-1-7.png" alt="">
+                            </div>
+                            <h4 class="font-bold mb-2">WebMoney Vietnam</h4>
+                            <p>WebMoney Vietnam is a guarantor member of WebMoney Transfer, using V-Check WMV — Prepaid transfer in Vietnamese dong. User can deposit money to wallet, withdraw cash from the balance, transfer money between 2 wallets and do payment for retailers and merchants.</p>
+                            <div class="absolute w-[90px] border-[1px] border-[#f1f3f6] bg-[#f1f3f6] rounded-lg mt-10 mr-7 py-1 text-base font-medium flex justify-center top-0 right-0">
+                                <img src="./assets/images/homepage/more.svg" alt="" class="mr-2">
+                                <span>More</span>
+                            </div>
+                        </a>
+                    </div>
+                    <div>
+                        <a href="" class="h-full max-w-[400px] text-[#40454f] bg-white rounded-xl mx-5 px-7 py-8 shadow-[17px_17px_200px_rgba(64,69,79,.06)] relative">
+                            <div class="w-14 h-14 border-[1px] border-[#f1f3f6] rounded-lg flex justify-center items-center mb-[26px]">
+                                <img src="./assets/images/homepage/project-1-8.jpeg" alt="">
+                            </div>
+                            <h4 class="font-bold mb-2">CC Core</h4>
+                            <p>Nexlab Technology has developed CC Core to help CII E&C drastically increase project efficiency and accountability by streamlining and mobilizing project communications and documentation.</p>
+                            <div class="absolute w-[90px] border-[1px] border-[#f1f3f6] bg-[#f1f3f6] rounded-lg mt-10 mr-7 py-1 text-base font-medium flex justify-center top-0 right-0">
+                                <img src="./assets/images/homepage/more.svg" alt="" class="mr-2">
+                                <span>More</span>
+                            </div>
+                        </a>
+                    </div>
+                    <div>
+                        <a href="" class="h-full max-w-[400px] text-[#40454f] bg-white rounded-xl mx-5 px-7 py-8 shadow-[17px_17px_200px_rgba(64,69,79,.06)] relative">
+                            <div class="w-14 h-14 border-[1px] border-[#f1f3f6] rounded-lg flex justify-center items-center mb-[26px]">
+                                <img src="./assets/images/homepage/project-1-9.jpeg" alt="">
+                            </div>
+                            <h4 class="font-bold mb-2">DIVA Beauty ERP</h4>
+                            <p>DIVA Beauty Salon is one of the leading prestigious beauty salons for customers in Vietnam</p>
+                            <div class="absolute w-[90px] border-[1px] border-[#f1f3f6] bg-[#f1f3f6] rounded-lg mt-10 mr-7 py-1 text-base font-medium flex justify-center top-0 right-0">
+                                <img src="./assets/images/homepage/more.svg" alt="" class="mr-2">
+                                <span>More</span>
+                            </div>
+                        </a>
+                    </div>
+                    <div>
+                        <a href="" class="h-full max-w-[400px] text-[#40454f] bg-white rounded-xl mx-5 px-7 py-8 shadow-[17px_17px_200px_rgba(64,69,79,.06)] relative">
+                            <div class="w-14 h-14 border-[1px] border-[#f1f3f6] rounded-lg flex justify-center items-center mb-[26px]">
+                                <img src="./assets/images/homepage/project-1-10.png" alt="">
+                            </div>
+                            <h4 class="font-bold mb-2">Daikin Services</h4>
+                            <p>Daikin is the global No.1 air conditioning manufacturer. We help Daikin to digitalize their whole ecosystem (warehouse, sale/ business, service).</p>
+                            <div class="absolute w-[90px] border-[1px] border-[#f1f3f6] bg-[#f1f3f6] rounded-lg mt-10 mr-7 py-1 text-base font-medium flex justify-center top-0 right-0">
+                                <img src="./assets/images/homepage/more.svg" alt="" class="mr-2">
+                                <span>More</span>
+                            </div>
+                        </a>
+                    </div>
+                    <div>
+                        <a href="" class="h-full max-w-[400px] text-[#40454f] bg-white rounded-xl mx-5 px-7 py-8 shadow-[17px_17px_200px_rgba(64,69,79,.06)] relative">
+                            <div class="w-14 h-14 border-[1px] border-[#f1f3f6] rounded-lg flex justify-center items-center mb-[26px]">
+                                <img src="./assets/images/homepage/project-1-11.png" alt="">
+                            </div>
+                            <h4 class="font-bold mb-2">FE HR Portal</h4>
+                            <p>FE CREDIT is the market leader in the consumer finance industry in Vietnam. With more than 20,000 employees, FE Credit needs a good Human Resource Management solution and we were trusted by them to do that.</p>
+                            <div class="absolute w-[90px] border-[1px] border-[#f1f3f6] bg-[#f1f3f6] rounded-lg mt-10 mr-7 py-1 text-base font-medium flex justify-center top-0 right-0">
+                                <img src="./assets/images/homepage/more.svg" alt="" class="mr-2">
+                                <span>More</span>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="bg-mainBlue text-white overflow-hidden">
+        <div class="wrapper py-[120px] flex-col">
+            <div class="flex w-full justify-between items-center *:max-w-[500px] pb-5">
+                <div class="heading flex flex-col items-start">
+                    <h5>SERVICES & SOLUTIONS</h5>
+                    <h2 class="text-white text-left">Various options for your business</h2>
+                </div>
+                <p>We appreciate the valuable experience, knowledge and deep understanding on the markets we have accumulated.</p>
+            </div>
+            <div class="w-[calc(400px*10)] flex flex-nowrap self-start relative js-ss-slide transition-all duration-500">
+                <div class="max-w-[400px] mr-10 js-ss-slide-item">
+                    <div class="h-60">
+                        <img src="./assets/images/homepage/sands-1.jpg" alt="" class="rounded-xl h-full w-full">
+                    </div>
+                    <h5 class="mt-7 mb-2 text-2xl font-bold">Digital Transformation</h5>
+                    <p>Offering flexible solution packages to fit their size, goals, and nature so asto bring the highest quality service, minimize the project implementation cost andtime for customers.</p>
+                </div>
+                <div class="max-w-[400px] mr-10 js-ss-slide-item">
+                    <div class="h-60">
+                        <img src="./assets/images/homepage/sands-2.jpg" alt="" class="rounded-xl h-full w-full">
+                    </div>
+                    <h5 class="mt-7 mb-2 text-2xl font-bold">Software Developement</h5>
+                    <p>Possessing a team of experts with great expertise & experience in working with many types of projects, we offer 4 following service packages of software development to clients.</p>
+                </div>
+                <div class="max-w-[400px] mr-10 js-ss-slide-item">
+                    <div class="h-60">
+                        <img src="./assets/images/homepage/sands-3.jpg" alt="" class="rounded-xl h-full w-full">
+                    </div>
+                    <h5 class="mt-7 mb-2 text-2xl font-bold">Healthcare</h5>
+                    <p>Incorporating information technology solutions in healthcare services is an essential part of the Industry and strategies  to build a modern Health System.</p>
+                </div>
+                <div class="max-w-[400px] mr-10 js-ss-slide-item">
+                    <div class="h-60">
+                        <img src="./assets/images/homepage/sands-4.jpg" alt="" class="rounded-xl h-full w-full">
+                    </div>
+                    <h5 class="mt-7 mb-2 text-2xl font-bold">Education</h5>
+                    <p>Applying technology in teaching and classroom management is gaining popularity and becoming an advantage for educational institutions in evaluation.</p>
+                </div>
+                <div class="max-w-[400px] mr-10 js-ss-slide-item">
+                    <div class="h-60">
+                        <img src="./assets/images/homepage/sands-5.jpg" alt="" class="rounded-xl h-full w-full">
+                    </div>
+                    <h5 class="mt-7 mb-2 text-2xl font-bold">E-Commerce</h5>
+                    <p>Applying technology in teaching and classroom management is gaining popularity and becoming an advantage for educational institutions in evaluation.</p>
+                </div>
+                <div class="max-w-[400px] mr-10 js-ss-slide-item">
+                    <div class="h-60">
+                        <img src="./assets/images/homepage/sands-6.jpg" alt="" class="rounded-xl h-full w-full">
+                    </div>
+                    <h5 class="mt-7 mb-2 text-2xl font-bold">Booking</h5>
+                    <p>Fast technology advancing has led to the birth of service booking platforms that help enterprises promote their business processes and customer services.</p>
+                </div>
+                <div class="max-w-[400px] mr-10 js-ss-slide-item">
+                    <div class="h-60">
+                        <img src="./assets/images/homepage/sands-7.jpg" alt="" class="rounded-xl h-full w-full">
+                    </div>
+                    <h5 class="mt-7 mb-2 text-2xl font-bold">Finance</h5>
+                    <p>Fintech helps solve the inefficiencies of traditional financial products and services, which are limited and complicated transaction processes and procedures.</p>
+                </div>
+                <div class="max-w-[400px] mr-10 js-ss-slide-item">
+                    <div class="h-60">
+                        <img src="./assets/images/homepage/sands-8.jpg" alt="" class="rounded-xl h-full w-full">
+                    </div>
+                    <h5 class="mt-7 mb-2 text-2xl font-bold">Social Network</h5>
+                    <p>Technology development and social media growth are inextricably linked. Social networking sites from web-based to hybrid (web and mobile) to pure mobile apps.</p>
+                </div>
+                <div class="max-w-[400px] mr-10 js-ss-slide-item">
+                    <div class="h-60">
+                        <img src="./assets/images/homepage/sands-9.jpg" alt="" class="rounded-xl h-full w-full">
+                    </div>
+                    <h5 class="mt-7 mb-2 text-2xl font-bold">Mobile Applications</h5>
+                    <p>We work on the latest technologies from Mobile to help our clients tomeet these challenges and improve their overall business by utilizing thebest of mobile technology.</p>
+                </div>
+            </div>
+            <div class="flex gap-5 self-start mt-3 *:transition-all *:duration-200">
+                <button class="filter: brightness-[250%] hover:bg-white hover:brightness-100 hover:-translate-x-1 w-12 h-12 rounded-xl flex justify-center items-center js-ss-prev">
+                    <img src="./assets/images/homepage/caret-left.svg" alt="">
+                </button>
+                <button class="filter: brightness-[250%] hover:bg-white hover:brightness-100 hover:translate-x-1 w-12 h-12 rounded-xl flex justify-center items-center js-ss-next">
+                    <img src="./assets/images/homepage/caret-right.svg" alt="">
+                </button>
+            </div>
+            <a href="https://www.nexlab.tech/service-solution" class="flex self-end items-center text-textColor relative pb-[10px] group *:transition-all *:duration-300">
+                <div class="block font-bold text-white">Learn more</div>
+                <img src="./assets/images/homepage/right-arrow-white.svg" alt="" class="ml-4 mt-0.5 max-w-full inline-block group-hover:-rotate-45">
+                <span class="block right-0 absolute border-b-[1px] border-[#dfe2e9] w-full bottom-0 group-hover:w-0"></span>
+            </a>
+        </div>
+    </section>
+</body>
+<script>
+    const projects_slide = document.querySelector('.js-projects-slide').cloneNode(true);
+    document.querySelector('.js-projects').appendChild(projects_slide);
+    const projects_slide_reverse = document.querySelector('.js-projects-slide-reverse').cloneNode(true);
+    document.querySelector('.js-projects-reverse').appendChild(projects_slide_reverse);
+
+    const ss_prev = document.querySelector('.js-ss-prev');
+    const ss_next = document.querySelector('.js-ss-next');
+    const ss_items = document.querySelectorAll('.js-ss-slide-item');
+    const ss_slide = document.querySelector('.js-ss-slide');
+    let ss_current = 0;
+    const ss_slide_length = ss_items.length - 1;
+    function update_ss_slide() {
+        const left = ss_items[ss_current].offsetLeft;
+        ss_slide.style.left = -left + 'px';
+    }
+    ss_next.addEventListener('click', () => {
+        ss_current = ss_current >= ss_slide_length ? 0 : ss_current + 1;
+        update_ss_slide();
+    })
+    ss_prev.addEventListener('click', () => {
+        ss_current = ss_current === 0 ? ss_slide_length : ss_current - 1;
+        update_ss_slide();
+    });
+</script>
+</html>
