@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" class="scroll-smooth overflow-x-hidden">
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -9,61 +9,10 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Encode+Sans:wght@400;500;600;700;800&display=swap" rel="stylesheet">
-    <script src="https://cdn.tailwindcss.com"></script>
-    <script>
-        tailwind.config = {
-          theme: {
-            extend: {
-                colors: {
-                    mainBlue: '#0f1f3d',
-                    mainOrange: '#ff7847',
-                    textColor: '#0d0e10',
-                },
-                fontFamily: {
-                    'sans': ['Encode Sans', 'sans-serif'],
-                },
-                animation: {
-                    'scroll': 'scroll 50s linear infinite',
-                    'scroll-reverse': 'scroll-reverse 50s linear infinite',
-                },
-                keyframes: {
-                    'scroll': {
-                        from: { transform: 'translateX(0)' },
-                        to: { transform: 'translateX(-100%)' },
-                    },
-                    'scroll-reverse': {
-                        from: { transform: 'translateX(-100%)' },
-                        to: { transform: 'translateX(0)' },
-                    }
-                }
-            }
-          }
-        }
-    </script>
-    <style type="text/tailwindcss">
-        @layer utilities {
-          .wrapper {
-            @apply max-w-7xl mx-auto flex items-center;
-          }
-          .nav-item {
-            @apply pl-5 pr-3 text-[#04121f] transition-all mx-0 hover:text-mainOrange duration-200;
-          }
-          .btn {
-            @apply bg-mainBlue px-[25px] py-4 text-white rounded-xl font-bold transition-all duration-200 hover:bg-mainOrange;
-          }
-          .btn-reverse {
-            @apply bg-mainOrange px-[25px] py-4 text-white rounded-xl font-bold transition-all duration-200 hover:bg-mainBlue;
-          }
-          .heading {
-            @apply max-w-[620px] font-bold text-center text-textColor mb-12 [&_h5]:text-orange-500 [&_h5]:tracking-[2px] [&_h5]:mb-4 [&_h5]:text-base [&_h2]:text-5xl [&_h2]:mb-4 [&_h2]:tracking-[-.4px] [&_p]:font-normal;
-          }
-          .product-tab-active {
-            @apply bg-white text-mainBlue;
-          }
-        }
-      </style>
+    <link rel="stylesheet" href="./assets/icons/css/all.min.css">
+    <link rel="stylesheet" href="./assets/styles/homepage/final.css">
 </head>
-<body class="font-sans text-[#40454f] text-lg scroll-smooth">
+<body class="font-sans text-[#40454f] text-lg overflow-x-hidden">
     <div class="flex justify-center items-center bg-mainBlue text-white text-[14px] py-[10px] leading-7">
         <div class="mr-3">
             <img src="./assets/images/homepage/top-icon.png" alt="">
@@ -126,7 +75,7 @@
         <div class="wrapper pt-20 pb-[100px]">
             <div class="flex justify-between *:w-1/4 gap-8">
                 <div>
-                    <div class="w-14 h-14 mb-5">
+                    <div class="size-14 mb-5">
                         <img src="./assets/images/homepage/feature-icon-1.svg" alt="">
                     </div>
                     <div>
@@ -134,7 +83,7 @@
                     </div>
                 </div>
                 <div>
-                    <div class="w-14 h-14 mb-5">
+                    <div class="size-14 mb-5">
                         <img src="./assets/images/homepage/feature-icon-2.png" alt="">
                     </div>
                     <div>
@@ -142,7 +91,7 @@
                     </div>
                 </div>
                 <div>
-                    <div class="w-14 h-14 mb-5">
+                    <div class="size-14 mb-5">
                         <img src="./assets/images/homepage/feature-icon-3.png" alt="">
                     </div>
                     <div>
@@ -150,7 +99,7 @@
                     </div>
                 </div>
                 <div>
-                    <div class="w-14 h-14 mb-5">
+                    <div class="size-14 mb-5">
                         <img src="./assets/images/homepage/feature-icon-4.svg" alt="">
                     </div>
                     <div>
@@ -395,7 +344,7 @@
         </div>
         <div class="overflow-hidden">
             <div class="pt-[60px] overflow-hidden js-projects inline-flex pb-12">
-                <div class="flex flex-nowrap [&_a]:mx-5 [&_a]:block animate-scroll w-[calc(400px*11)] transition-all js-projects-slide">
+                <div class="flex flex-nowrap [&_a]:mx-5 [&_a]:block animate-scroll w-max transition-all js-projects-slide">
                     <div>
                         <a href="" class="h-full max-w-[400px] text-[#40454f] bg-white rounded-xl mx-5 px-7 py-8 shadow-[17px_17px_200px_rgba(64,69,79,.06)] relative">
                             <div class="w-14 h-14 border-[1px] border-[#f1f3f6] rounded-lg flex justify-center items-center mb-[26px]">
@@ -542,7 +491,7 @@
                 </div>
             </div>
             <div class="pb-[140px] overflow-hidden js-projects-reverse inline-flex">
-                <div class="flex flex-nowrap [&_a]:mx-5 [&_a]:block animate-scroll-reverse w-[calc(400px*11)] transition-all js-projects-slide-reverse">
+                <div class="flex flex-nowrap [&_a]:mx-5 [&_a]:block animate-scroll-reverse w-max transition-all js-projects-slide-reverse">
                     <div>
                         <a href="" class="h-full max-w-[400px] text-[#40454f] bg-white rounded-xl mx-5 px-7 py-8 shadow-[17px_17px_200px_rgba(64,69,79,.06)] relative">
                             <div class="w-14 h-14 border-[1px] border-[#f1f3f6] rounded-lg flex justify-center items-center mb-[26px]">
@@ -699,7 +648,7 @@
                 </div>
                 <p>We appreciate the valuable experience, knowledge and deep understanding on the markets we have accumulated.</p>
             </div>
-            <div class="w-[calc(400px*10)] flex flex-nowrap self-start relative js-ss-slide transition-all duration-500">
+            <div class="w-max flex flex-nowrap self-start relative js-ss-slide transition-all duration-500">
                 <div class="max-w-[400px] mr-10 js-ss-slide-item">
                     <div class="h-60">
                         <img src="./assets/images/homepage/sands-1.jpg" alt="" class="rounded-xl h-full w-full">
@@ -765,10 +714,10 @@
                 </div>
             </div>
             <div class="flex gap-5 self-start mt-3 *:transition-all *:duration-200">
-                <button class="filter: brightness-[250%] hover:bg-white hover:brightness-100 hover:-translate-x-1 w-12 h-12 rounded-xl flex justify-center items-center js-ss-prev">
+                <button class="brightness-[250%] hover:bg-white hover:brightness-100 hover:-translate-x-1 w-12 h-12 rounded-xl flex justify-center items-center js-ss-prev">
                     <img src="./assets/images/homepage/caret-left.svg" alt="">
                 </button>
-                <button class="filter: brightness-[250%] hover:bg-white hover:brightness-100 hover:translate-x-1 w-12 h-12 rounded-xl flex justify-center items-center js-ss-next">
+                <button class="brightness-[250%] hover:bg-white hover:brightness-100 hover:translate-x-1 w-12 h-12 rounded-xl flex justify-center items-center js-ss-next">
                     <img src="./assets/images/homepage/caret-right.svg" alt="">
                 </button>
             </div>
@@ -776,9 +725,442 @@
                 <div class="block font-bold text-white">Learn more</div>
                 <img src="./assets/images/homepage/right-arrow-white.svg" alt="" class="ml-4 mt-0.5 max-w-full inline-block group-hover:-rotate-45">
                 <span class="block right-0 absolute border-b-[1px] border-[#dfe2e9] w-full bottom-0 group-hover:w-0"></span>
-            </a>
+                    </a>
         </div>
     </section>
+    <section>
+        <div class="wrapper flex-col pt-20 pb-[140px] !items-end">
+            <div class="heading !text-left !w-[70%] !max-w-[840px]">
+                <h5>TECHNOLOGIES</h5>
+                <h2>Our techstacks with multiple expertises</h2>
+                <p>We applies the latest approaches that allow us to create and scale excellent products for our partners from the ground up.</p>
+            </div>
+            <div class="w-full flex items-start">
+                <div class="relative w-1/4 max-w-[290px] flex flex-col [&_a]:max-w-full [&_a]:pb-5 [&_a]:font-medium [&_a]:inline-block">
+                    <a href="#System">System & Platform</a>
+                    <a href="#Backend">Backend Development</a>
+                    <a href="#Frontend">Frontend Development</a>
+                    <a href="#Mobile">Mobile Development</a>
+                    <a href="#Design">UI/UX Design</a>
+                    <span class="absolute w-[2px] top-0 bottom-0 right-0 bg-[#e1e4eb]"></span>
+                </div>
+                <div class="w-3/4 ml-[150px]">
+                    <div class="border-b-[1px] border-[#e1e4eb]s" id="System">
+                        <h3 class="font-bold text-[28px] pt-5">System & Platform</h3>
+                        <div class="flex *:w-1/2 my-8">
+                            <div>
+                                - Amazon Web Services <br>
+                                - Google Cloud Platform <br>
+                                - Microsoft Azure Services <br>
+                                - Viettel Cloud Services <br>
+                                - Docker Container
+                            </div>
+                            <div>
+                                - Kubernetes <br>
+                                - Artificial Inteligence <br>
+                                - Machine Learning <br>
+                                - Blockchain/NFT <br>
+                                - Media Streaming
+                            </div>
+                        </div>
+                    </div>
+                    <div class="border-b-[1px] border-[#e1e4eb]s" id="Backend">
+                        <h3 class="font-bold text-[28px] pt-5">Backend Development</h3>
+                        <div class="flex *:w-1/2 my-8">
+                            <div>
+                                - NodeJS <br>
+                                - Go Lang <br>
+                                - Python <br>
+                                - Java <br>
+                                - MongoDB
+                            </div>
+                            <div>
+                                - PostgreSQL <br>
+                                - GraphQL <br>
+                                - Hasura <br>
+                                - NET/SQL Server+ .NET Core
+                            </div>
+                        </div>
+                    </div>
+                    <div class="border-b-[1px] border-[#e1e4eb]s" id="Frontend">
+                        <h3 class="font-bold text-[28px] pt-5">Frontend Development</h3>
+                        <div class="flex *:w-1/2 my-8">
+                            <div>
+                                - ReactJS <br>
+                                - AngularJS <br>
+                                - VueJS
+                            </div>
+                            <div>
+                                - Ionic <br>
+                                - Progressive Web App <br>
+                                - HTML/CSS/Javascript
+                            </div>
+                        </div>
+                    </div>
+                    <div class="border-b-[1px] border-[#e1e4eb]s" id="Mobile">
+                        <h3 class="font-bold text-[28px] pt-5">Mobile Development</h3>
+                        <div class="flex *:w-1/2 my-8">
+                            <div>
+                                - Android Native <br>
+                                - iOS Native <br>
+                                - React Native <br>
+                            </div>
+                            <div>
+                                - Flutter <br>
+                                - Xamarin
+                            </div>
+                        </div>
+                    </div>
+                    <div class="border-b-[1px] border-[#e1e4eb]s" id="Design">
+                        <h3 class="font-bold text-[28px] pt-5">UI/UX Design</h3>
+                        <div class="flex *:w-1/2 my-8">
+                            <div>
+                                - User Interface Design <br>
+                                - User Experience Research <br>
+                                - Sketch
+
+                            </div>
+                            <div>
+                                - Figma <br>
+                                - Abstract <br>
+                                - Zeplin
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="bg-mainBlue">
+        <div class="wrapper py-[145px] flex-col relative">
+            <div class="heading !text-white !mb-0">
+                <h5>TESTIMONIAL</h5>
+                <h2>What business leaders say</h2>
+                <p>Without you, we couldn't each our best version. We deeply appreciate all feedbacks to improve the quality of our services!</p>
+            </div>
+            <div class="mt-20 translate-x-[360px] !text-textColor flex flex-nowrap self-start w-max *:max-w-[560px] *:p-10 *:bg-white *:rounded-xl *:w-full *:h-full *:mr-[208px] relative transition-all duration-300 js-te-slide">
+                <div class="js-te-slide-item">
+                    <h4 class="mt-[10px] mb-3 font-bold text-2xl">Nexlab is a professional partner</h4>
+                    <p class="mb-8 text-[22px]">“We always need a partner with deep understanding of business and technology strategy in the process of digital transformation”</p>
+                    <div class="flex">
+                        <img src="./assets/images/homepage/testimonial-1.jpg" alt="" class="max-w-[60px] object-contain">
+                        <div class="ml-4 *:mb-1">
+                            <p class="font-bold">Hong Ting Wong</p>
+                            <p class="text-base text-[#6e7687]">CEO @Care</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="js-te-slide-item">
+                    <h4 class="mt-[10px] mb-3 font-bold text-2xl">We saved huge when product launched</h4>
+                    <p class="mb-8 text-[22px]">“The internal management system developed by Nexlab has helped us to have a complete and centralized digitization model, thereby improving efficiency, increasing profits, and reducing paperwork”</p>
+                    <div class="flex">
+                        <img src="./assets/images/homepage/testimonial-2.png" alt="" class="max-w-[60px] object-contain">
+                        <div class="ml-4 *:mb-1">
+                            <p class="font-bold">Nguyen Tan Phong</p>
+                            <p class="text-base text-[#6e7687]">President & Chief Executive Officer @CII E&C</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="js-te-slide-item">
+                    <h4 class="mt-[10px] mb-3 font-bold text-2xl">A complete ERP for DIVA Beauty salon chain</h4>
+                    <p class="mb-8 text-[22px]">“Nexlab provides a model for managing the company's internal system, digitizing the HR management process, orders, promotions, announcements, and close inter-departmental linkage. This is a big step forward compared to the previous traditional management process.”</p>
+                    <div class="flex">
+                        <img src="./assets/images/homepage/testimonial-3.png" alt="" class="max-w-[60px] object-contain">
+                        <div class="ml-4 *:mb-1">
+                            <p class="font-bold">Le The Hai</p>
+                            <p class="text-base text-[#6e7687]">CEP @DVA Group</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="js-te-slide-item">
+                    <h4 class="mt-[10px] mb-3 font-bold text-2xl">High-quality service with an experienced technical team</h4>
+                    <p class="mb-8 text-[22px]">“They successfully develop applications on both Android and iOS platforms for us.”</p>
+                    <div class="flex">
+                        <img src="./assets/images/homepage/testimonial-4.png" alt="" class="max-w-[60px] object-contain">
+                        <div class="ml-4 *:mb-1">
+                            <p class="font-bold">Min Liang Tan</p>
+                            <p class="text-base text-[#6e7687]">CEO @Razer</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="js-te-slide-item">
+                    <h4 class="mt-[10px] mb-3 font-bold text-2xl">In Nexlab we trust</h4>
+                    <p class="mb-8 text-[22px]">“Nexlab's successful digital transformation for the whole Daikin Vietnam ecosystem is a good premise and case study for Daikin global in digitizing business, replacing all traditional tools, apps.”</p>
+                    <div class="flex">
+                        <img src="./assets/images/homepage/testimonial-5.jpg" alt="" class="max-w-[60px] object-contain">
+                        <div class="ml-4 *:mb-1">
+                            <p class="font-bold">Hideaki Furihata</p>
+                            <p class="text-base text-[#6e7687]">Department Manager @Daikin Global Operation Divisions</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="js-te-slide-item">
+                    <h4 class="mt-[10px] mb-3 font-bold text-2xl">Nexlab helps breathe life into a super ecosystem</h4>
+                    <p class="mb-8 text-[22px]">“Nexlab builds a complete digitized model of the entire Daikin Vietnam ecosystem, centrally managed for all departments."</p>
+                    <div class="flex">
+                        <img src="./assets/images/homepage/testimonial-6.png" alt="" class="max-w-[60px] object-contain">
+                        <div class="ml-4 *:mb-1">
+                            <p class="font-bold">Ly Thi Phuong Trang</p>
+                            <p class="text-base text-[#6e7687]">General Director @Daikin Vietnam</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="js-te-slide-item">
+                    <h4 class="mt-[10px] mb-3 font-bold text-2xl">Nexlab is a great partner for Hasura</h4>
+                    <p class="mb-8 text-[22px]">“What started as a way to win a client with a tight timeline has now become a business differentiator for Nexlab”</p>
+                    <div class="flex">
+                        <img src="./assets/images/homepage/testimonial-7.png" alt="" class="max-w-[60px] object-contain">
+                        <div class="ml-4 *:mb-1">
+                            <p class="font-bold">Rajoshi</p>
+                            <p class="text-base text-[#6e7687]">COO & Co-founder @Hasura</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="js-te-slide-item">
+                    <h4 class="mt-[10px] mb-3 font-bold text-2xl">Upgrading the management system</h4>
+                    <p class="mb-8 text-[22px]">“Nexlab provides a model for managing the internal system of the company, digitizing the management of human resources, orders, notifications, and close inter-departmental linkage"</p>
+                    <div class="flex">
+                        <img src="./assets/images/homepage/testimonial-8.png" alt="" class="max-w-[60px] object-contain">
+                        <div class="ml-4 *:mb-1">
+                            <p class="font-bold">Tran Cong Chinh</p>
+                            <p class="text-base text-[#6e7687]">Director @Khataco</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="js-te-slide-item">
+                    <h4 class="mt-[10px] mb-3 font-bold text-2xl">An amazing place to work & thrive</h4>
+                    <p class="mb-8 text-[22px]">“Nexlab has an extremely clear training roadmap to encourage employees to constantly learn and improve skills through training courses”</p>
+                    <div class="flex">
+                        <img src="./assets/images/homepage/testimonial-9.png" alt="" class="max-w-[60px] object-contain">
+                        <div class="ml-4 *:mb-1">
+                            <p class="font-bold">Chris Harvey</p>
+                            <p class="text-base text-[#6e7687]">CEO & Co-Founder @ITviec</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="js-te-slide-item">
+                    <h4 class="mt-[10px] mb-3 font-bold text-2xl">We love your offshore service</h4>
+                    <p class="mb-8 text-[22px]">“Nexlab has provided us some great talents with expertise that we need so much. Now those people are important part of our technical team which is wonderful”</p>
+                    <div class="flex">
+                        <img src="./assets/images/homepage/testimonial-10.png" alt="" class="max-w-[60px] object-contain">
+                        <div class="ml-4 *:mb-1">
+                            <p class="font-bold">Alexander Felber</p>
+                            <p class="text-base text-[#6e7687]">CEO @Vetera GmbH</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="absolute flex !bg-transparent justify-between !max-w-[800px] top-[58%] w-full *:transition-all *:duration-200">
+                <button class="hover:bg-[#ff7847] hover:-translate-x-1 w-12 h-12 rounded-xl flex justify-center items-center js-te-prev">
+                    <img src="./assets/images/homepage/te-caret-left.svg" alt="">
+                </button>
+                <button class="hover:bg-[#ff7847] hover:translate-x-1 w-12 h-12 rounded-xl flex justify-center items-center js-te-next">
+                    <img src="./assets/images/homepage/te-caret-right.svg" alt="">
+                </button>
+            </div>
+        </div>
+    </section>
+    <section>
+        <div after class="wrapper flex-col pt-[70px] pb-[130px]">
+            <div class="heading !mb-20">
+                <h5>TEAM</h5>
+                <h2>Our leadership team</h2>
+                <p>We've been delivered many successfull projects. In order to doing so, we gathered experts from various domains.</p>
+            </div>
+            <div class="flex justify-around w-full *:flex *:flex-col *:items-center">
+                <a href="https://www.linkedin.com/" class="group">
+                    <div class="relative *:transition-all *:duration-300">
+                        <div class="relative !after:content-none before:absolute before:block before:w-full before:h-full before:top-0 before:bg-transparent before:rounded-xl before:z-10 before:group-hover:bg-[rgba(255,120,71,.5)] before:transition-all before:duration-300">
+                            <img class="h-[330px] bg-[#e1e4eb] rounded-xl mb-6 grayscale-0 object-cover " src="./assets/images/homepage/team-1.png" alt="">
+                        </div>
+                            <div class="absolute size-12 bottom-[14%] right-[6%] grayscale group-hover:grayscale-0 z-10">
+                            <img src="./assets/images/homepage/linkedin.svg" alt="">
+                        </div>
+                    </div>
+                    <h4 class="mb-2 text-2xl font-bold">Thi Huynh</h4>
+                    <p class="text-[#6e7687]">Founder & CEO</p>
+                </a>
+                <a href="https://www.linkedin.com/" class="group">
+                    <div class="relative *:transition-all *:duration-300">
+                        <div class="relative !after:content-none before:absolute before:block before:w-full before:h-full before:top-0 before:bg-transparent before:rounded-xl before:z-10 before:group-hover:bg-[rgba(255,120,71,.5)] before:transition-all before:duration-300">
+                            <img class="h-[330px] bg-[#e1e4eb] rounded-xl mb-6 grayscale-0 object-cover " src="./assets/images/homepage/team-2.png" alt="">
+                        </div>
+                            <div class="absolute size-12 bottom-[14%] right-[6%] grayscale group-hover:grayscale-0 z-10">
+                            <img src="./assets/images/homepage/linkedin.svg" alt="">
+                        </div>
+                    </div>
+                    <h4 class="mb-2 text-2xl font-bold">Toan Nguyen</h4>
+                    <p class="text-[#6e7687]">CTO</p>
+                </a>
+                <a href="https://www.linkedin.com/" class="group">
+                    <div class="relative *:transition-all *:duration-300">
+                        <div class="relative !after:content-none before:absolute before:block before:w-full before:h-full before:top-0 before:bg-transparent before:rounded-xl before:z-10 before:group-hover:bg-[rgba(255,120,71,.5)] before:transition-all before:duration-300">
+                            <img class="h-[330px] bg-[#e1e4eb] rounded-xl mb-6 grayscale-0 object-cover" src="./assets/images/homepage/team-3.png" alt="">
+                        </div>
+                            <div class="absolute size-12 bottom-[14%] right-[6%] grayscale group-hover:grayscale-0 z-10">
+                            <img src="./assets/images/homepage/linkedin.svg" alt="">
+                        </div>
+                    </div>
+                    <h4 class="mb-2 text-2xl font-bold">Sunny Tran</h4>
+                    <p class="text-[#6e7687]">VP of Project</p>
+                </a>
+                <a href="https://www.linkedin.com/" class="group">
+                    <div class="relative *:transition-all *:duration-300">
+                        <div class="relative !after:content-none before:absolute before:block before:w-full before:h-full before:top-0 before:bg-transparent before:rounded-xl before:z-10 before:group-hover:bg-[rgba(255,120,71,.5)] before:transition-all before:duration-300">
+                            <img class="h-[330px] bg-[#e1e4eb] rounded-xl mb-6 grayscale-0 object-cover " src="./assets/images/homepage/team-4.png" alt="">
+                        </div>
+                            <div class="absolute size-12 bottom-[14%] right-[6%] grayscale group-hover:grayscale-0 z-10">
+                            <img src="./assets/images/homepage/linkedin.svg" alt="">
+                        </div>
+                    </div>
+                    <h4 class="mb-2 text-2xl font-bold">Robert Vo</h4>
+                    <p class="text-[#6e7687]">Advisor - Data Scientist</p>
+                </a>
+            </div>
+        </div>
+    </section>
+    <section>
+        <div class="wrapper flex-col pt-20 pb-[145px]">
+            <div class="flex justify-between w-full items-end mb-20">
+                <div class="heading !text-left !mb-0">
+                    <h5>BLOG</h5>
+                    <h2>Dive into our insights & advices</h2>
+                </div>
+                <a href="#" class="flex items-center text-textColor relative pb-[10px]">
+                    <div class="block font-bold">Learn more</div>
+                    <img src="./assets/images/homepage/right-arrow-2.svg" alt="" class="ml-4 mt-0.5 max-w-full inline-block">
+                    <span class="block absolute border-b-[1px] border-[#dfe2e9] w-full bottom-0"></span>
+                </a>
+            </div>
+            <div class="flex justify-between gap-10 text-white *:h-[640px]">
+                <a href="https://www.nexlab.tech/blog/case-study-how-nexlab-used-hasura-to-digitize-daikin-vietnams-ac-servicing-business-unit" class="rounded-xl relative overflow-hidden flex-shrink-[0.5] group">
+                    <div class="flex items-center absolute top-5 left-5 z-10">
+                        <div class="size-12 mr-4">
+                            <img class="rounded-full border border-white" src="./assets/images/homepage/blog-1.png" alt="">
+                        </div>    
+                        <p class="font-bold">Toan Nguyen</p>                    
+                    </div>
+                    <div class="!after:content-none after:block after:w-full after:h-full after:bg-[rgba(0,0,0,.5)] after:absolute after:top-0 w-full h-full">
+                        <img class="w-full h-full object-cover group-hover:scale-105 transition duration-300" src="./assets/images/homepage/blog-2.jpeg" alt="">
+                    </div>
+                    <div class="absolute bottom-5 left-5">
+                        <div class="heading !text-white !text-left !mb-0 !p-4">
+                            <h5 class="!text-base !mb-2">CASE STUDY</h5>
+                            <h2 class="!text-2xl !mb-2 !font-semibold">Case Study: How Nexlab used Hasura to digitize Daikin Vietnam’s AC servicing business unit</h2>
+                            <p class="!text-base flex items-center gap-3">March 17, 2023 <i class="fa-solid fa-circle text-[4px]"></i> 10 mins read</p>
+                        </div>
+                    </div>
+                </a>
+                <div class="*:h-1/2 flex flex-col gap-10">
+                    <a href="https://www.nexlab.tech/blog/case-study-how-nexlab-used-hasura-to-digitize-daikin-vietnams-ac-servicing-business-unit" class="rounded-xl relative overflow-hidden group">
+                        <div class="flex items-center absolute top-5 left-5 z-10">
+                            <div class="size-12 mr-4">
+                                <img class="rounded-full border border-white" src="./assets/images/homepage/blog-3.jpg" alt="">
+                            </div>    
+                            <p class="font-bold">Quynh Pham</p>                    
+                        </div>
+                        <div class="!after:content-none after:block after:w-full after:h-full after:bg-[rgba(0,0,0,.5)] after:absolute after:top-0">
+                            <img class="group-hover:scale-105 transition duration-300" src="./assets/images/homepage/blog-4.jpeg" alt="">
+                        </div>
+                        <div class="absolute bottom-5 left-5">
+                            <div class="heading !text-white !text-left !mb-0 !p-4">
+                                <h5 class="!text-base !mb-2">CASE STUDY</h5>
+                                <h2 class="!text-2xl !mb-2 !font-semibold">Đằng sau một dự án vì cộng đồng giúp đỡ 1.000 bệnh nhân F0 mang tên Teletriage</h2>
+                                <p class="!text-base flex items-center gap-3">March 17, 2023 <i class="fa-solid fa-circle text-[4px]"></i> 3 mins read</p>
+                            </div>
+                        </div>
+                    </a>
+                    <a href="https://www.nexlab.tech/blog/case-study-how-nexlab-used-hasura-to-digitize-daikin-vietnams-ac-servicing-business-unit" class="rounded-xl relative overflow-hidden group">
+                        <div class="flex items-center absolute top-5 left-5 z-10">
+                            <div class="size-12 mr-4">
+                                <img class="rounded-full border border-white" src="./assets/images/homepage/blog-5.jpg" alt="">
+                            </div>    
+                            <p class="font-bold">Van Tran</p>                    
+                        </div>
+                        <div class="!after:content-none after:block after:w-full after:h-full after:bg-[rgba(0,0,0,.5)] after:absolute after:top-0">
+                            <img class="group-hover:scale-105 transition duration-300" src="./assets/images/homepage/blog-6.png" alt="">
+                        </div>
+                        <div class="absolute bottom-5 left-5">
+                            <div class="heading !text-white !text-left !mb-0 !p-4">
+                                <h5 class="!text-base !mb-2">CASE STUDY</h5>
+                                <h2 class="!text-2xl !mb-2 !font-semibold">Tự Hào Đồng Hành Cùng Daikin Vietnam</h2>
+                                <p class="!text-base flex items-center gap-3">March 17, 2023 <i class="fa-solid fa-circle text-[4px]"></i> 5 mins read</p>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+    <footer>
+        <div>
+            <div class="wrapper w-full -mb-[205px]">
+                <div class="bg-[url('../../images/homepage/footer-bg.png')] bg-center pt-20 pb-[100px] flex flex-col justify-center items-center !text-white w-full rounded-xl">
+                    <h2 class="text-5xl font-bold mb-3">Have an idea in mind?</h2>
+                    <p class="text-[22px]">You are more than welcome to contact our team for a free consultation</p>
+                    <a href="https://www.nexlab.tech/consultation" class="btn !bg-white !text-mainBlue my-10">Book a free consultation</a>
+                    <div class="flex gap-4 *:flex *:gap-4">
+                        <div>
+                            <img src="./assets/images/homepage/footer-tick.svg" alt="">
+                            <span>Trusted partner</span>
+                        </div>
+                        <div>
+                            <img src="./assets/images/homepage/footer-tick.svg" alt="">
+                            <span>Flexible model</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="bg-mainBlue w-full h-full pt-[320px] text-white text-base ">
+            <div class="wrapper flex-col">
+                <div class="flex gap-14 pb-[45px] border-b border-[#40454f] w-full">
+                    <div class="w-2/5">
+                        <a href="#">
+                            <img class="h-[50px]" src="./assets/images/homepage/footer-logo.svg" alt="">
+                        </a>
+                        <p class="mt-3 max-w-[300px]">Nexlab Technology was founded in 2013 with a vision to deliver a reliable & flexible model for businesses engaging with new digital era. Let's talk about your ideas! We always love to hear from you, whether it is enterprise solution or consulting, we are just a call away!</p>
+                    </div>
+                    <div class="flex justify-between gap-8 *:flex *:flex-col *:w-1/3 *:gap-4">
+                        <div>
+                            <a class="hover:opacity-80" href="tel:+842822159068">(+84) 28 221 590 68</a>
+                            <a class="hover:opacity-80" href="mailto:contact@nexlab.tech">contact@nexlab.tech</a>
+                            <a class="hover:opacity-80" href="https://maps.app.goo.gl/uB2oAWSUfAo9mhet6">65 Le Trung Nghia Street, Ward 12, Tan Binh Distrist, Ho Chi Minh City, Vietnam</a>
+                        </div>
+                        <div>
+                            <a class="hover:opacity-80" href="#">Home</a>
+                            <a class="hover:opacity-80" href="company.html">Company</a>
+                            <a class="hover:opacity-80" href="service-solution.html">Service & Solution</a>
+                            <a class="hover:opacity-80" href="product.html">Product</a>
+                            <a class="hover:opacity-80" href="project.html">Project</a>
+                            <a class="hover:opacity-80" href="case-study.html">Case Study</a>
+                        </div>
+                        <div>
+                            <a class="hover:opacity-80" href="">Blog</a>
+                            <a class="hover:opacity-80" href="">Career</a>
+                            <a class="hover:opacity-80" href="">Privacy Policy</a>
+                            <a class="hover:opacity-80" href="">Spam Policy</a>
+                            <a class="hover:opacity-80" href="">Contact</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="flex justify-between items-center w-full pt-10 pb-5 border-b border-[#40454f]">
+                    <p>2023 © Nexlab Technology Co., Ltd</p>
+                    <div class="flex gap-4">
+                        <a href="https://www.facebook.com/NexlabHQ">
+                            <img src="./assets/images/homepage/footer-fb.svg" alt="">
+                        </a>
+                        <a href="https://twitter.com/NexlabHQ">
+                            <img src="./assets/images/homepage/footer-twitter.svg" alt="">
+                        </a>
+                        <a href="https://vn.linkedin.com/company/nexlabhq">
+                            <img src="./assets/images/homepage/footer-linkedin.svg" alt="">
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
 </body>
 <script>
     const projects_slide = document.querySelector('.js-projects-slide').cloneNode(true);
@@ -794,7 +1176,7 @@
     const ss_slide_length = ss_items.length - 1;
     function update_ss_slide() {
         const left = ss_items[ss_current].offsetLeft;
-        ss_slide.style.left = -left + 'px';
+        ss_slide.style.transform = `translateX(${-left}px)`;
     }
     ss_next.addEventListener('click', () => {
         ss_current = ss_current >= ss_slide_length ? 0 : ss_current + 1;
@@ -804,5 +1186,29 @@
         ss_current = ss_current === 0 ? ss_slide_length : ss_current - 1;
         update_ss_slide();
     });
+
+    const te_next = document.querySelector('.js-te-next');
+    const te_prev = document.querySelector('.js-te-prev');
+    const te_items = document.querySelectorAll('.js-te-slide-item');
+    const te_slide = document.querySelector('.js-te-slide');
+    let te_current = 0;
+    const te_transX = te_slide.computedStyleMap().get('transform')[0].x.value;
+    const te_slide_length = te_items.length - 1;
+    function update_te_slide() {
+        const left = te_items[te_current].offsetLeft;
+        te_slide.style.transform = `translateX(${te_transX-left}px)`;
+    }
+    te_next.addEventListener('click', () => {
+        te_current = te_current >= te_slide_length ? 0 : te_current + 1;
+        update_te_slide();
+    });
+    te_prev.addEventListener('click', () => {
+        te_current = te_current === 0 ? te_slide_length : te_current - 1;
+        update_te_slide();
+    });
+    setInterval(() => {
+        te_current = te_current >= te_slide_length ? 0 : te_current + 1;
+        update_te_slide();
+    }, 3500);
 </script>
 </html>
