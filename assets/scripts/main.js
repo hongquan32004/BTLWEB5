@@ -6,8 +6,8 @@ const importPartial = (url, partialId) => {
         })
 };
 
-importPartial('../../partials/header.html', 'header');
-importPartial('../../partials/clients.html', 'clients');
-importPartial('../../partials/team.html', 'team');
-importPartial('../../partials/blog.html', 'blog');
-importPartial('../../partials/footer.html', 'footer');
+importPartial('partials/header.html', 'header');
+importPartial('partials/clients.html', 'clients');
+importPartial('partials/team.html', 'team');
+importPartial('partials/blog.html', 'blog');
+importPartial('partials/footer.html', 'footer');
