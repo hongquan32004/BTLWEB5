@@ -1,3 +1,4 @@
+document.body.setAttribute('class', 'font-sans text-[#40454f] text-lg overflow-x-hidden');
 const importPartial = (url, partialId) => {
     fetch(url)
         .then(response => response.text())
