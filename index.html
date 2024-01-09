@@ -13,7 +13,7 @@
     <link rel="stylesheet" href="./assets/styles/homepage/final.css">
 </head>
 <body class="font-sans text-[#40454f] text-lg overflow-x-hidden">
-    <div class="flex justify-center items-center bg-mainBlue text-white text-[14px] py-[10px] leading-7">
+    <div class="hidden lg:flex justify-center items-center bg-mainBlue text-white text-[14px] py-[10px] leading-7">
         <div class="mr-3">
             <img src="./assets/images/homepage/top-icon.png" alt="">
         </div>
@@ -25,9 +25,9 @@
     </div>
     <header id="header"></header>
     <section>
-        <div class="wrapper pt-20 justify-between">
-            <div class="max-w-[620px] w-[53%]">
-                <h1 class="mb-4 text-7xl font-bold text-textColor leading-[76px]">
+        <div class="wrapper py-40 lg:pb-0 justify-between flex-col lg:flex-row">
+            <div class="max-w-[620px] w-full lg:w-[53%] mb-20">
+                <h1 class="mb-4 text-6xl lg:text-7xl font-bold text-textColor leading-[76px]">
                     Accelerate
                     <br>
                     your digital transformation
@@ -55,7 +55,7 @@
                 </div>
                 <a href="./consultation.html" class="btn-reverse">Book a free consultation</a>
             </div>
-            <div class="[&_img]:rounded-xl [&_img]:size-full *: relative -mt-28 js-home-mousemove">
+            <div class="[&_img]:rounded-xl [&_img]:size-full relative lg:-mt-28 js-home-mousemove">
                 <div class="max-w-[500px]">
                     <img class="!h-[500px] object-cover object-[75%]" src="./assets/images/homepage/home-1.jpg" alt="">
                 </div>
@@ -71,7 +71,7 @@
             </div>
         </div>
         <div class="wrapper pt-20 pb-[100px]">
-            <div class="flex justify-between *:w-1/4 gap-8">
+            <div class="flex justify-between *:w-1/2 lg:*:w-1/4 flex-wrap lg:flex-nowrap lg:gap-8">
                 <div>
                     <div class="size-14 mb-5">
                         <img src="./assets/images/homepage/feature-icon-1.svg" alt="">
@@ -114,7 +114,7 @@
                 <h2>Making the journey</h2>
                 <p>Where your journey to digital transformation seems intimidating, we can help. Our team are always at your service to assist you in consultant, implementation, integration and support.</p>
             </div>
-            <div class="flex w-full *:w-1/4 divide-x-[1px] divide-[#e1e4eb] text-center *:pt-12 border-t-[1px] border-[#e1e4eb] [&_div_h3]:font-bold [&_div_h3]:text-6xl [&_div_h3]:text-textColor [&_div_h3]:mb-4">
+            <div class="flex w-full flex-col md:flex-row lg:flex-row items-center *:w-1/4 md:divide-x-[1px] lg:divide-x-[1px] md:divide-[#e1e4eb] lg:divide-[#e1e4eb] text-center *:pt-12 md:border-t md:border-[#e1e4eb] lg:border-t-[1px] lg:border-[#e1e4eb] [&_div_h3]:font-bold [&_div_h3]:text-6xl [&_div_h3]:text-textColor [&_div_h3]:mb-4">
                 <div>
                     <h3>10+</h3>
                     <p>years experience</p>
@@ -132,12 +132,12 @@
                     <p>happy clients</p>
                 </div>
             </div>
-            <div class="pt-[60px] mr-10 flex flex-col gap-y-10">
+            <div class="pt-[60px] flex flex-col items-center gap-y-10 *:flex-col lg:*:flex-row [&_img]:object-cover">
                 <div class="flex w-full p-[30px] rounded-xl shadow-[17px_17px_200px_rgba(64,69,79,.06)]">
                     <div>
-                        <img src="./assets/images/homepage/paper-1.jpg" alt="" class="w-80 h-60 min-w-80 rounded-xl">
+                        <img src="./assets/images/homepage/paper-1.jpg" alt="" class="size-full lg:w-80 lg:h-60 min-w-80 rounded-xl">
                     </div>
-                    <div class="pl-10 flex flex-col items-start self-center justify-around text-left h-60">
+                    <div class="lg:pl-10 flex flex-col items-start self-center justify-around text-left min-h-max lg:h-60">
                         <div>
                             <h3 class="text-2xl font-bold mb-[10px]">TOP 6 Vietnam Best IT Companies 2023 by itviec</h3>
                             <p>Nexlab Technology has consistently ranked high in the top 10 Best SMEs IT Companies survey for two years in a row (2022, 2023). Our company is recognized as one of the companies with exceptional culture, benefits, working environment, managed care, and training in the fast-paced IT industry, as attested by over 18,000 reviews from IT employees on ITviec - one of the Best IT Job Recruitment Site in Vietnam.</p>
@@ -151,9 +151,9 @@
                 </div>
                 <div class="flex w-full p-[30px] rounded-xl shadow-[17px_17px_200px_rgba(64,69,79,.06)]">
                     <div>
-                        <img src="./assets/images/homepage/paper-2.jpg" alt="" class="w-80 h-60 min-w-80 rounded-xl">
+                        <img src="./assets/images/homepage/paper-2.jpg" alt="" class="size-full lg:w-80 lg:h-60 min-w-80 rounded-xl">
                     </div>
-                    <div class="pl-10 flex flex-col items-start self-center justify-around text-left h-60">
+                    <div class="lg:pl-10 flex flex-col items-start self-center justify-around text-left min-h-max lg:h-60">
                         <div>
                             <h3 class="text-2xl font-bold mb-[10px]">TOP 4 Vietnam Best IT Companies 2022 by itviec</h3>
                             <p>Overcoming the challenges of working remotely during the pandemic, Nexlab has ranked 4th in the “Top 15 Vietnam Best IT Companies 2022” survey, based on 16,000+ reviews submitted by IT people on itviec – one of the Best IT JobRecruitment Site in Vietnam.</p>
@@ -167,9 +167,9 @@
                 </div>
                 <div class="flex w-full p-[30px] rounded-xl shadow-[17px_17px_200px_rgba(64,69,79,.06)]">
                     <div>
-                        <img src="./assets/images/homepage/paper-3.jpg" alt="" class="w-80 h-60 min-w-80 rounded-xl">
+                        <img src="./assets/images/homepage/paper-3.jpg" alt="" class="size-full lg:w-80 lg:h-60 min-w-80 rounded-xl">
                     </div>
-                    <div class="pl-10 flex flex-col items-start self-center justify-around text-left h-60">
+                    <div class="lg:pl-10 flex flex-col items-start self-center justify-around text-left min-h-max lg:h-60">
                         <div>
                             <h3 class="text-2xl font-bold mb-[10px]">Partnership with Hasura Inc.</h3>
                             <p>We moved to use Hasura primarily to be able to deliver projects within a tight timeline and deliver complex enterprise applications confidently. In 1 year, we has made Hasura an essential part of our stack & has observed a 50% reduction in the development cost and the ability to confidently deliver within timelines.</p>
@@ -183,9 +183,9 @@
                 </div>
                 <div class="flex w-full p-[30px] rounded-xl shadow-[17px_17px_200px_rgba(64,69,79,.06)]">
                     <div>
-                        <img src="./assets/images/homepage/paper-4.png" alt="" class="w-80 h-60 min-w-80 rounded-xl">
+                        <img src="./assets/images/homepage/paper-4.png" alt="" class="size-full lg:w-80 lg:h-60 min-w-80 rounded-xl">
                     </div>
-                    <div class="pl-10 flex flex-col items-start self-center justify-around text-left h-60">
+                    <div class="lg:pl-10 flex flex-col items-start self-center justify-around text-left min-h-max lg:h-60">
                         <div>
                             <h3 class="text-2xl font-bold mb-[10px]">An Eco-system for Daikin Vietnam</h3>
                             <p>Daikin Vietnam worked with us on a project to modernize their legacy technology stack. Alongside their management team, we help breathe life to a super ecosystem which ensures operation need and also acts as an on-demand aggregator serving end-users.</p>
@@ -209,85 +209,93 @@
                 <p></p>
             </div>
             <div class="w-full">
-                <div class="flex justify-center">
-                    <div class="px-5 py-2 bg-[#3f4c64] text-white font-medium rounded-xl text-base hover:cursor-pointer mr-5 product-tab-active js-products-btn">X-Core</div>
-                    <div class="px-5 py-2 bg-[#3f4c64] text-white font-medium rounded-xl text-base hover:cursor-pointer mr-5 js-products-btn">Nexlab PHR</div>
-                    <div class="px-5 py-2 bg-[#3f4c64] text-white font-medium rounded-xl text-base hover:cursor-pointer mr-5 js-products-btn">N-Commerce</div>
+                <div class="flex flex-col md:flex-row lg:flex-row items-center justify-center *:max-w-fit gap-5">
+                    <div class="px-5 py-2 bg-[#3f4c64] text-white font-medium rounded-xl text-base hover:cursor-pointer product-tab-active js-products-btn">X-Core</div>
+                    <div class="px-5 py-2 bg-[#3f4c64] text-white font-medium rounded-xl text-base hover:cursor-pointer js-products-btn">Nexlab PHR</div>
+                    <div class="px-5 py-2 bg-[#3f4c64] text-white font-medium rounded-xl text-base hover:cursor-pointer js-products-btn">N-Commerce</div>
                     <div class="px-5 py-2 bg-[#3f4c64] text-white font-medium rounded-xl text-base hover:cursor-pointer js-products-btn">N-Services</div>
                 </div>
                 <div>
                     <div>
-                        <div class="flex *:w-[45%] justify-between items-center pt-20 pb-[145px] js-products-tab">
-                            <div class="text-white max-w-[500px]">
+                        <div class="flex flex-col lg:flex-row *:w-full lg:*:w-[45%] justify-between items-center pt-20 pb-[145px] js-products-tab">
+                            <div class="text-white lg:max-w-[500px] mb-[60px] lg:mb-0">
                                 <h6 class="text-[#47c1fe] mb-4 text-base font-bold tracking-widest">X-CORE</h6>
                                 <h2 class="text-[40px] leading-[48px] mb-4 font-bold">Digital Workspace for Business</h2>
                                 <p class="leading-7">Nexlab Technology in variably pursues the goal of bringing the highest benefits to our clients, so we have built XCore - A comprehensive digital space for businesses, where all the applications that business customers need are integrated on a single platform.</p>
                                 <br>
                                 <p class="leading-7">X-Core Digital Platform is dynamicallydeveloped with a choice of customization and unlimited scalability. X-Core offers optional packages that cater to the individual desires of each business. We are committed to accompanying and bringing the greatest value to our clients.</p>
                             </div>
-                            <div class="flex justify-between flex-row-reverse relative *:*:rounded-xl">
-                                <div class="w-[85%] max-w-[480px] z-[1]">
-                                    <img src="./assets/images/homepage/product-1-1.png" alt="">
-                                </div>
-                                <div class="absolute w-2/5 -right-[15%] bottom-[15%] z-[1]">
-                                    <img src="./assets/images/homepage/product-1-2.jpg" alt="">
-                                </div>
-                                <div class="absolute -right-[10%] top-[15%] z-0">
-                                    <img src="./assets/images/homepage/product-1-3.svg" alt="" class="w-[80px]">
+                            <div class="flex justify-center lg:justify-between flex-row-reverse relative">
+                                <div class="*:*:rounded-xl relative">
+                                    <div class="relative max-w-[480px] z-[1]">
+                                        <img src="./assets/images/homepage/product-1-1.png" alt="">
+                                    </div>
+                                    <div class="absolute w-1/2 -right-[20%] bottom-[12%] z-[1]">
+                                        <img src="./assets/images/homepage/product-1-2.jpg" alt="">
+                                    </div>
+                                    <div class="absolute -right-[12%] top-[15%] z-0">
+                                        <img src="./assets/images/homepage/product-1-3.svg" alt="" class="w-[80px]">
+                                    </div>
                                 </div>
                             </div>
                         </div>
-                        <div class="*:w-[45%] justify-between items-center pt-20 pb-[145px] js-products-tab hidden">
-                            <div class="flex justify-between flex-row-reverse relative *:*:rounded-xl">
-                                <div class="w-[85%] max-w-[480px] z-[1]">
-                                    <img src="./assets/images/homepage/product-2-1.png" alt="">
-                                </div>
-                                <div class="absolute w-2/5 -right-[15%] bottom-[15%] z-[1]">
-                                    <img src="./assets/images/homepage/product-2-2.jpg" alt="">
+                        <div class="flex-col lg:flex-row *:w-full lg:*:w-[45%] justify-between items-center pt-20 pb-[145px] js-products-tab hidden">
+                            <div class="flex justify-center lg:justify-between flex-row-reverse relative">
+                                <div class="*:*:rounded-xl relative">
+                                    <div class="max-w-[480px] z-[1] relative">
+                                        <img src="./assets/images/homepage/product-2-1.png" alt="">
+                                    </div>
+                                    <div class="absolute w-1/2 -right-[20%] bottom-[12%] z-[1]">
+                                        <img src="./assets/images/homepage/product-2-2.jpg" alt="">
+                                    </div>
                                 </div>
                             </div>
-                            <div class="text-white max-w-[500px]">
-                                <h6 class="text-[#47c1fe] mb-4 text-base font-bold tracking-widest">NEXLAB PHR</h6>
+                            <div class="text-white lg:max-w-[500px] mb-[60px] lg:mb-0">
+                                <h6 class="text-[#47c1fe] my-4 lg:mt-0 text-base font-bold tracking-widest">NEXLAB PHR</h6>
                                 <h2 class="text-[40px] leading-[48px] mb-4 font-bold">Telehealth Platform</h2>
                                 <p class="leading-7">With many years of experience in building technology solutions within the health sector, Nexlab Technology has developed the Nexlab PHRplatform - Smart Health for every Vietnamese family. This is an all inclusive telehealth care platform with a medical record system, electronic health records and consultation,monitoring, care, and smart online medical appointment booking, connecting with leading medical facilities.</p>
                                 <br>
                                 <p class="leading-7">In the context that the Telehealth model (Telehealth Services) will keep exploding according to the trend of digital transformation, Nexlab PHR with a modern technology system will assist businesses, medical facilities, and hospitals to easily digitize effectively, helping the professional team to save time and resources.</p>
                             </div>
                         </div>
-                        <div class="*:w-[45%] justify-between items-center pt-20 pb-[145px] js-products-tab hidden">
-                            <div class="text-white max-w-[500px]">
+                        <div class="flex-col lg:flex-row *:w-full lg:*:w-[45%] justify-between items-center pt-20 pb-[145px] js-products-tab hidden">
+                            <div class="text-white lg:max-w-[500px] mb-[60px] lg:mb-0">
                                 <h6 class="text-[#47c1fe] mb-4 text-base font-bold tracking-widest">N-COMMERCE</h6>
                                 <h2 class="text-[40px] leading-[48px] mb-4 font-bold">E-Commerce Services Platform</h2>
                                 <p class="leading-7">For customers who are aiming at online retail business or seeking for all-in-one e-commerce solution for businesses and organizations, we provide a comprehensive solution package for e-commerce platform management with N-Commerce products.</p>
                                 <br>
                                 <p class="leading-7">N-Commerce product solution from us includes mobile applications and websites for end users, as well as system administration websites for operators. For the needs of managing branches, products, warehouses, orders, promotions, transactions, we provide a variety of customization options depending on the unique requirements of our customers.</p>
                             </div>
-                            <div class="flex justify-between flex-row-reverse relative *:*:rounded-xl">
-                                <div class="w-[85%] max-w-[480px] z-[1]">
-                                    <img src="./assets/images/homepage/product-3-1.png" alt="">
-                                </div>
-                                <div class="absolute w-2/5 -right-[15%] bottom-[15%] z-[1]">
-                                    <img src="./assets/images/homepage/product-3-2.jpg" alt="">
-                                </div>
-                                <div class="absolute -right-[10%] top-[15%] z-0">
-                                    <img src="./assets/images/homepage/product-3-3.svg" alt="" class="w-[80px]">
+                            <div class="flex justify-center lg:justify-between flex-row-reverse relative">
+                                <div class="*:*:rounded-xl relative">
+                                    <div class="max-w-[480px] z-[1] relative">
+                                        <img src="./assets/images/homepage/product-3-1.png" alt="">
+                                    </div>
+                                    <div class="absolute w-1/2 -right-[20%] bottom-[12%] z-[1]">
+                                        <img src="./assets/images/homepage/product-3-2.jpg" alt="">
+                                    </div>
+                                    <div class="absolute -right-[12%] top-[15%] z-0">
+                                        <img src="./assets/images/homepage/product-3-3.svg" alt="" class="w-[80px]">
+                                    </div>
                                 </div>
                             </div>
                         </div>
-                        <div class="*:w-[45%] justify-between items-center pt-20 pb-[145px] js-products-tab hidden">
-                            <div class="text-white max-w-[500px]">
+                        <div class="flex-col lg:flex-row *:w-full lg:*:w-[45%] justify-between items-center pt-20 pb-[145px] js-products-tab hidden">
+                            <div class="text-white lg:max-w-[500px] mb-[60px] lg:mb-0">
                                 <h6 class="text-[#47c1fe] mb-4 text-base font-bold tracking-widest">N-SERVICES</h6>
                                 <h2 class="text-[40px] leading-[48px] mb-4 font-bold">On-demand Services System</h2>
                                 <p class="leading-7">We introduced a package solution formulti-industry service platform management which benefits enterprises and corporations in the business industry in need of digital transforming and operating a service order management platform such as cosmetology, housework, repair, and construction.</p>
                                 <br>
                                 <p class="leading-7">Our N-Service solution provides avariety of accessibility options including mobile applications, websites for customers as well as a multifunction admin page for businesses and organizations. Managing services, costs, personnel, customers... with flexible settings and diverse deployment options are all available. Like other platform product solutions, we always provide optimal options according to the needs of our customers.</p>
                             </div>
-                            <div class="flex justify-between flex-row-reverse relative *:*:rounded-xl">
-                                <div class="w-[85%] max-w-[480px] z-[1]">
-                                    <img src="./assets/images/homepage/product-4-1.png" alt="">
-                                </div>
-                                <div class="absolute w-2/5 right-[55%] bottom-[15%] z-[1]">
-                                    <img src="./assets/images/homepage/product-4-2.jpg" alt="">
+                            <div class="flex justify-center lg:justify-between flex-row-reverse relative *:*:rounded-xl">
+                                <div class="*:*:rounded-xl relative">
+                                    <div class="max-w-[480px] z-[1]">
+                                        <img src="./assets/images/homepage/product-4-1.png" alt="">
+                                    </div>
+                                    <div class="absolute w-3/5 right-[60%] bottom-[20%] z-[1]">
+                                        <img src="./assets/images/homepage/product-4-2.jpg" alt="">
+                                    </div>
                                 </div>
                             </div>
                         </div>
@@ -298,7 +306,7 @@
     </section>
     <section>
         <div class="wrapper w-full">
-            <div class="flex w-full justify-between items-end pt-[145px]">    
+            <div class="flex flex-col lg:flex-row w-full justify-between items-start lg:items-end pt-[145px]">    
                 <div class="heading flex flex-col items-start">
                     <h5>PROJECTS</h5>
                     <h2>What we build for business</h2>
@@ -611,11 +619,11 @@
         </div>
     </section>
     <section class="bg-mainBlue text-white overflow-hidden">
-        <div class="wrapper py-[120px] flex-col">
-            <div class="flex w-full justify-between items-center *:max-w-[500px] pb-5">
-                <div class="heading flex flex-col items-start">
+        <div class="wrapper py-[100px] lg:py-[120px] flex-col">
+            <div class="flex flex-col lg:flex-row w-full justify-between lg:items-center *:max-w-[500px] mb-20">
+                <div class="heading flex flex-col items-start !text-white sm:!mb-0 md:!mb-0">
                     <h5>SERVICES & SOLUTIONS</h5>
-                    <h2 class="text-white text-left">Various options for your business</h2>
+                    <h2 class="text-left">Various options for your business</h2>
                 </div>
                 <p>We appreciate the valuable experience, knowledge and deep understanding on the markets we have accumulated.</p>
             </div>
@@ -700,14 +708,14 @@
         </div>
     </section>
     <section>
-        <div class="wrapper flex-col pt-20 pb-[140px] !items-end">
-            <div class="heading !text-left !w-[70%] !max-w-[840px]">
+        <div class="wrapper flex-col pt-20 pb-[140px] lg:!items-end">
+            <div class="heading !text-left lg:!w-[70%] !max-w-[840px]">
                 <h5>TECHNOLOGIES</h5>
                 <h2>Our techstacks with multiple expertises</h2>
                 <p>We applies the latest approaches that allow us to create and scale excellent products for our partners from the ground up.</p>
             </div>
             <div class="w-full flex items-start">
-                <div class="relative w-1/4 max-w-[290px] flex flex-col [&_a]:max-w-full [&_a]:pb-5 [&_a]:font-medium [&_a]:inline-block">
+                <div class="relative w-1/4 max-w-[290px] hidden lg:flex flex-col [&_a]:max-w-full [&_a]:pb-5 [&_a]:font-medium [&_a]:inline-block">
                     <a href="#System">System & Platform</a>
                     <a href="#Backend">Backend Development</a>
                     <a href="#Frontend">Frontend Development</a>
@@ -715,7 +723,7 @@
                     <a href="#Design">UI/UX Design</a>
                     <span class="absolute w-[2px] top-0 bottom-0 right-0 bg-[#e1e4eb]"></span>
                 </div>
-                <div class="w-3/4 ml-[150px]">
+                <div class="w-3/4 lg:ml-[150px]">
                     <div class="border-b-[1px] border-[#e1e4eb]s" id="System">
                         <h3 class="font-bold text-[28px] pt-5">System & Platform</h3>
                         <div class="flex *:w-1/2 my-8">
@@ -803,13 +811,13 @@
         </div>
     </section>
     <section class="bg-mainBlue">
-        <div class="wrapper py-[145px] flex-col relative">
+        <div class="wrapper py-[100px] lg:py-[145px] flex-col relative js-te-cont">
             <div class="heading !text-white !mb-0">
                 <h5>TESTIMONIAL</h5>
                 <h2>What business leaders say</h2>
                 <p>Without you, we couldn't each our best version. We deeply appreciate all feedbacks to improve the quality of our services!</p>
             </div>
-            <div class="mt-20 translate-x-[360px] !text-textColor flex flex-nowrap self-start w-max *:max-w-[560px] *:p-10 *:bg-white *:rounded-xl *:w-full *:h-full *:mr-[208px] relative transition-all duration-300 js-te-slide">
+            <div class="mt-20 !text-textColor flex flex-nowrap self-start w-max *:max-w-[560px] *:p-10 *:bg-white *:rounded-xl *:w-full *:h-full *:mr-[208px] relative transition-all duration-300 js-te-slide">
                 <div class="js-te-slide-item">
                     <h4 class="mt-[10px] mb-3 font-bold text-2xl">Nexlab is a professional partner</h4>
                     <p class="mb-8 text-[22px]">“We always need a partner with deep understanding of business and technology strategy in the process of digital transformation”</p>
@@ -921,7 +929,7 @@
                     </div>
                 </div>
             </div>
-            <div class="absolute flex !bg-transparent justify-between !max-w-[800px] top-[58%] w-full *:transition-all *:duration-200">
+            <div class="absolute hidden lg:flex !bg-transparent justify-between !max-w-[800px] top-[58%] w-full *:transition-all *:duration-200">
                 <button class="hover:bg-[#ff7847] hover:-translate-x-1 w-12 h-12 rounded-xl flex justify-center items-center js-te-prev">
                     <img src="./assets/images/homepage/te-caret-left.svg" alt="">
                 </button>
@@ -937,6 +945,17 @@
 </body>
 <script src="./assets/scripts/main.js"></script>
 <script>
+    window.addEventListener('scroll', () => {
+        const scrollPosition = window.scrollY;
+        const height = document.querySelector('body div').clientHeight;
+        if (scrollPosition > height) {
+            document.getElementById('header').style.transform = `translateY(-${height}px)`;
+        }
+        else {
+            document.getElementById('header').style.transform = `translateY(0px)`;
+        }
+    })
+
     const home_items = document.querySelectorAll('.js-home-mousemove div');
     document.addEventListener('mousemove', (e) => {
         const {clientX: mouseX, clientY: mouseY} = e;
@@ -983,12 +1002,14 @@
         update_ss_slide();
     });
 
+    const te_container = document.querySelector('.js-te-cont');
     const te_next = document.querySelector('.js-te-next');
     const te_prev = document.querySelector('.js-te-prev');
     const te_items = document.querySelectorAll('.js-te-slide-item');
     const te_slide = document.querySelector('.js-te-slide');
     let te_current = 0;
-    const te_transX = te_slide.computedStyleMap().get('transform')[0].x.value;
+    const te_transX = (te_container.clientWidth - te_items[0].clientWidth) / 2;
+    te_slide.style.transform = `translateX(${te_transX}px)`;
     const te_slide_length = te_items.length - 1;
     function update_te_slide() {
         const left = te_items[te_current].offsetLeft;
